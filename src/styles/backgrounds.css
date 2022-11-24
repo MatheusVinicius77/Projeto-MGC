@@ -1,0 +1,15 @@
+.bg-brand-1 {
+  background-color: var(--color-brand-1);
+}
+
+.bg-brand-2 {
+  background-color: var(--color-brand-2);
+}
+
+.bg-brand-4 {
+  background-color: var(--color-brand-4);
+}
+
+.bg-grey-1 {
+  background-color: var(--color-grey-1);
+}
