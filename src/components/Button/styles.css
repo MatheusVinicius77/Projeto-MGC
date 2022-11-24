@@ -10,6 +10,14 @@ button{
   width: fit-content;
 }
 
+.true {
+  font-size: var(--font-family-4);
+}
+
+button .size {
+  font-size: var(--font-size-1);
+}
+
 button:hover {
   opacity: .9;
   transition-duration: .3s;
