@@ -1,0 +1,41 @@
+.text-1 {
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-5);
+}
+
+.text-2 {
+  color: var(--color-grey-1);
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-4);
+}
+
+.text-3 {
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-5);
+}
+
+.text-4 {
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-6);
+}
+
+.title-1 {
+  color: var(--color-grey-1);
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1);
+}
+
+.title-2 {
+  color: var(--color-grey-1);
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-2);
+}
+
+.title-3 {
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-3);
+}
+
+.weight-1 {
+  font-weight: var(--weight-1);
+}

@@ -13,3 +13,15 @@
 .bg-grey-1 {
   background-color: var(--color-grey-1);
 }
+
+.color-grey-0 {
+  color: var(--color-grey-0);
+}
+
+.color-grey-1 {
+  color: var(--color-grey-1);
+}
+
+.color-brand-4 {
+  color: var(--color-brand-4);
+}
