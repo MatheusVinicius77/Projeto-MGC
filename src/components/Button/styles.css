@@ -1,0 +1,16 @@
+@import "../../index.css";
+
+button{
+  background-color: var(--color-brand-3);
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-5);
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 16px;
+  width: fit-content;
+}
+
+button:hover {
+  opacity: .9;
+  transition-duration: .3s;
+}
