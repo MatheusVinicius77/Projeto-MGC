@@ -6,8 +6,16 @@
   background-color: var(--color-brand-2);
 }
 
+.bg-brand-3 {
+  background-color: var(--color-brand-3);
+}
+
 .bg-brand-4 {
   background-color: var(--color-brand-4);
+}
+
+.bg-brand-5 {
+  background-color: var(--color-brand-5);
 }
 
 .bg-grey-1 {
