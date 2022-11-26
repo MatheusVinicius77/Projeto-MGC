@@ -3,7 +3,7 @@ import iconeFechar from "../../assets/imgs/icones/x.svg";
 
 import styles from "./styles.module.css";
 
-export function Card ({listaCoresCirculos, imagem, textoAlternativoImagem, sinal, textoAlternativoSinal, iconeJanela}) {
+export function Card ({listaCoresCirculos, imagem, textoAlternativoImagem, sinal, textoAlternativoSinal, IconeJanela}) {
     return (
         <article className={styles.card}>
             <header className={styles.cardHeader}>
@@ -16,7 +16,7 @@ export function Card ({listaCoresCirculos, imagem, textoAlternativoImagem, sinal
                 </div>
                 <div className={styles.icones}>
                     <img className={styles.icon} src={iconeMinimizacao} alt="ícone de minimização" />
-                    <img className={styles.icon} src={iconeJanela} alt="ícone de janela colorido" />
+                    <IconeJanela />
                     <img className={styles.icon} src={iconeFechar} alt="ícone de fechamento" />
                 </div>
             </header>
