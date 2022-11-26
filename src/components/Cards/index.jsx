@@ -47,9 +47,9 @@ export function Card({
         />
       </article>
       {!sinal ? (
-        <IconeExclamacao cores={coresSinal} className={styles.cardSinal} />
+        <IconeExclamacao cores={coresSinal} />
       ) : sinal == "interrogação" ? (
-        <IconeInterrogacao cores={coresSinal} className={styles.cardSinal} />
+        <IconeInterrogacao cores={coresSinal} />
       ) : (
         ""
       )}

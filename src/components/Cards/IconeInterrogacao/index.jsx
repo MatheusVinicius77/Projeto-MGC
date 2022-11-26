@@ -1,7 +1,9 @@
-export function IconeInterrogacao({ className, cores }) {
+import styles from "./../styles.module.css";
+
+export function IconeInterrogacao({ cores }) {
   return (
     <svg
-      className={className}
+      className={`${styles.cardSinal} ${styles.iconeInterrogacao}`}
       width="176"
       height="232"
       viewBox="0 0 176 232"
