@@ -11,6 +11,8 @@ import exclamacaoRoxoRosa from "../../assets/imgs/sinais/exclamacao-roxo-rosa.sv
 import exclamacaoRoxoVerde from "../../assets/imgs/sinais/exclamacao-roxo-verde.svg";
 import interrogacaoAmareloRosa from "../../assets/imgs/sinais/interrogacao-rosa-amarelo.svg";
 
+import styles from "./styles.module.css";
+
 export function Card ({listaCoresCirculos, imagem, textoAlternativoImagem, sinal, textoAlternativoSinal, iconeJanela}) {
     return (
         <article>
