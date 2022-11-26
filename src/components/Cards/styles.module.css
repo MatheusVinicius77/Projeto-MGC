@@ -1,13 +1,19 @@
+.cardWrapper {
+    max-width: 498px;
+    height: 472px;
+    position: relative;
+    width: 100%;
+}
+
 .card {
     border: 3px solid var(--color-grey-1);
     border-radius: 38px;
     box-shadow: 5px -5px 0px 0px var(--color-grey-1);
-    height: 472px;
     overflow: hidden;
-    max-width: 498px;
+    height: 100%;
     -moz-box-shadow: 5px -5px 0px 0px var(--color-grey-1);
-    position: relative;
     -webkit-box-shadow: 5px -5px 0px 0px var(--color-grey-1);
+    width: 100%;
 }
 
 .cardHeader {

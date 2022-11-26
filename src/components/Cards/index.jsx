@@ -16,33 +16,35 @@ export function Card({
   corIconeJanela,
 }) {
   return (
-    <article className={styles.card}>
-      <header className={`${styles.cardHeader} ${corFundoHeader}`}>
-        <div className={`${styles.circulosWrapper}`}>
-          {listaCoresCirculos.map((cor) => {
-            return <span className={`${styles.circulo} ${cor}`}></span>;
-          })}
-        </div>
-        <div className={styles.icones}>
-          <img
-            className={styles.icone}
-            src={iconeMinimizacao}
-            alt="ícone de minimização"
-          />
-          <IconeJanela cor={corIconeJanela} />
-          <img
-            className={styles.icone}
-            src={iconeFechar}
-            alt="ícone de fechamento"
-          />
-        </div>
-      </header>
-      <img
-        className={styles.cardImg}
-        src={imagem}
-        alt={textoAlternativoImagem}
-      />
+    <div className={styles.cardWrapper}>
+      <article className={styles.card}>
+        <header className={`${styles.cardHeader} ${corFundoHeader}`}>
+          <div className={`${styles.circulosWrapper}`}>
+            {listaCoresCirculos.map((cor) => {
+              return <span className={`${styles.circulo} ${cor}`}></span>;
+            })}
+          </div>
+          <div className={styles.icones}>
+            <img
+              className={styles.icone}
+              src={iconeMinimizacao}
+              alt="ícone de minimização"
+            />
+            <IconeJanela cor={corIconeJanela} />
+            <img
+              className={styles.icone}
+              src={iconeFechar}
+              alt="ícone de fechamento"
+            />
+          </div>
+        </header>
+        <img
+          className={styles.cardImg}
+          src={imagem}
+          alt={textoAlternativoImagem}
+        />
+      </article>
       <IconeExclamacao className={styles.cardSinal} />
-    </article>
+    </div>
   );
 }
