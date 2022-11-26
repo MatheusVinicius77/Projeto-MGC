@@ -6,6 +6,7 @@
     overflow: hidden;
     max-width: 498px;
     -moz-box-shadow: 5px -5px 0px 0px var(--color-grey-1);
+    position: relative;
     -webkit-box-shadow: 5px -5px 0px 0px var(--color-grey-1);
 }
 
@@ -44,4 +45,10 @@
     height: 400px;
     object-fit: cover;
     width: 100%;
+}
+
+.cardSinal {
+    bottom: 0;
+    position: absolute;
+    right: 0;
 }
