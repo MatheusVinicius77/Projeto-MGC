@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 
 import { IconeJanela } from "./IconeJanela";
 import { IconeExclamacao } from "./IconeExclamacao";
+import { IconeInterrogacao } from "./IconeInterrogacao";
 
 export function Card({
   corFundoHeader,
@@ -15,6 +16,7 @@ export function Card({
   coresSinal,
   corIconeJanela,
 }) {
+  console.log(sinal);
   return (
     <div className={styles.cardWrapper}>
       <article className={styles.card}>
@@ -46,6 +48,8 @@ export function Card({
       </article>
       {!sinal ? (
         <IconeExclamacao cores={coresSinal} className={styles.cardSinal} />
+      ) : sinal == "interrogação" ? (
+        <IconeInterrogacao cores={coresSinal} className={styles.cardSinal} />
       ) : (
         ""
       )}
