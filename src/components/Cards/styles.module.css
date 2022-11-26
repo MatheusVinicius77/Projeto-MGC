@@ -58,6 +58,13 @@
 
 .cardSinal {
     position: absolute;
+    display: none;
+}
+
+@media (min-width: 610px) {
+    .cardSinal {
+        display: block;
+    }
 }
 
 .iconeInterrogacao {
