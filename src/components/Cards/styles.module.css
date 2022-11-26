@@ -54,8 +54,15 @@
 }
 
 .cardSinal {
-    bottom: -200px;
     position: absolute;
-    right: -170px;
-    z-index: 100;
+}
+
+.iconeInterrogacao {
+    bottom: -60px;
+    right: -80px;
+}
+
+.iconeExclamacao {
+    bottom: -30px;
+    right: -50px;
 }
