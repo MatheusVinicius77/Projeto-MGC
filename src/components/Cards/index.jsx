@@ -4,6 +4,7 @@ import iconeFechar from "../../assets/imgs/icones/x.svg";
 import styles from "./styles.module.css";
 
 import { IconeJanela } from "./IconeJanela";
+import { IconeExclamacao } from "./IconeExclamacao";
 
 export function Card({
   corFundoHeader,
@@ -41,11 +42,7 @@ export function Card({
         src={imagem}
         alt={textoAlternativoImagem}
       />
-      <img
-        className={styles.cardSinal}
-        src={sinal}
-        alt={textoAlternativoSinal}
-      />
+      <IconeExclamacao className={styles.cardSinal} />
     </article>
   );
 }
