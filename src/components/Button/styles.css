@@ -1,6 +1,6 @@
 @import "../../index.css";
 
-button{
+.true, .false{
   background-color: var(--color-brand-3);
   font-family: var(--font-family-2);
   font-size: var(--font-size-5);
@@ -12,13 +12,5 @@ button{
 
 .true {
   font-size: var(--font-family-4);
-}
-
-button .size {
-  font-size: var(--font-size-1);
-}
-
-button:hover {
-  opacity: .9;
-  transition-duration: .3s;
+  font-weight: bold;
 }
