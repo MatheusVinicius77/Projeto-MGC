@@ -44,7 +44,7 @@ export function Card({
           alt={textoAlternativoImagem}
         />
       </article>
-      {sinal == "exclamação" ? (
+      {!sinal ? (
         <IconeExclamacao cores={coresSinal} className={styles.cardSinal} />
       ) : (
         ""
