@@ -11,6 +11,6 @@
 }
 
 .true {
-  font-size: var(--font-family-4);
-  font-weight: bold;
+  font-size: var(--font-size-4);
+  font-weight: var(--weight-1);
 }
