@@ -36,6 +36,10 @@
     gap: 15px;
 }
 
+.icone {
+    width: 25px;
+}
+
 .cardImg {
     height: 400px;
     object-fit: cover;

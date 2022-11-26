@@ -17,9 +17,9 @@ export function Card ({listaCoresCirculos, imagem, textoAlternativoImagem, sinal
                     }
                 </div>
                 <div className={styles.icones}>
-                    <img className={styles.icon} src={iconeMinimizacao} alt="ícone de minimização" />
+                    <img className={styles.icone} src={iconeMinimizacao} alt="ícone de minimização" />
                     <IconeJanela cor={corIconeJanela} />
-                    <img className={styles.icon} src={iconeFechar} alt="ícone de fechamento" />
+                    <img className={styles.icone} src={iconeFechar} alt="ícone de fechamento" />
                 </div>
             </header>
             <img className={styles.cardImg} src={imagem} alt={textoAlternativoImagem} />
