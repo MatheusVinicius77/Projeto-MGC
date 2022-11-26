@@ -3,7 +3,7 @@ import styles from "./../styles.module.css";
 export function IconeExclamacao({ cores }) {
   return (
     <svg
-      className={`${styles.cardSinal} ${styles.iconeInterrogacao}`}
+      className={`${styles.cardSinal} ${styles.iconeExclamacao}`}
       width="146"
       height="236"
       viewBox="0 0 146 236"
