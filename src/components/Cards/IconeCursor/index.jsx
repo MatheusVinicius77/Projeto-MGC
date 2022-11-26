@@ -1,6 +1,6 @@
 import styles from "./../styles.module.css";
 
-export function Cursor() {
+export function IconeCursor() {
   return (
     <svg
       className={`${styles.icone} ${styles.iconeCursor}`}

@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 import { IconeJanela } from "./IconeJanela";
 import { IconeExclamacao } from "./IconeExclamacao";
 import { IconeInterrogacao } from "./IconeInterrogacao";
-import { Cursor } from "./Cursor";
+import { IconeCursor } from "./IconeCursor";
 
 export function Card({
   corFundoHeader,
@@ -51,7 +51,7 @@ export function Card({
       ) : sinal == "interrogação" ? (
         <IconeInterrogacao cores={coresSinal} />
       ) : (
-        <Cursor />
+        <IconeCursor />
       )}
     </div>
   );
