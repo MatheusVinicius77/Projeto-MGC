@@ -3,7 +3,7 @@ import styles from "./../styles.module.css";
 export function IconeCursor() {
   return (
     <svg
-      className={`${styles.icone} ${styles.iconeCursor}`}
+      className={`${styles.cardSinal} ${styles.iconeCursor}`}
       width="153"
       height="267"
       viewBox="0 0 153 267"

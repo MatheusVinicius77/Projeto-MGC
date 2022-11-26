@@ -77,6 +77,11 @@
     right: -50px;
 }
 
+.iconeCursor {
+    bottom: -90px;
+    right: -70px;
+}
+
 .sombra {
     border: 3px solid black;
     box-shadow: 5px -5px 0px 0px var(--color-grey-1);
