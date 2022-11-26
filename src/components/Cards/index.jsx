@@ -31,7 +31,7 @@ export function Card({
               src={iconeMinimizacao}
               alt="ícone de minimização"
             />
-            <IconeJanela cor={corIconeJanela} />
+            <IconeJanela className={styles.icone} cor={corIconeJanela} />
             <img
               className={styles.icone}
               src={iconeFechar}

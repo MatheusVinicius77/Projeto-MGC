@@ -41,7 +41,13 @@
 }
 
 .icone {
-    width: 25px;
+    width: 20px;
+}
+
+@media (min-width: 420px) {
+    .icone {
+        width: 25px;
+    }  
 }
 
 .cardImg {

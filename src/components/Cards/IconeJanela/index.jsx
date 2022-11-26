@@ -1,6 +1,7 @@
-export function IconeJanela({ cor }) {
+export function IconeJanela({ cor, className }) {
   return (
     <svg
+      className={className}
       width="28"
       height="28"
       viewBox="0 0 28 28"
