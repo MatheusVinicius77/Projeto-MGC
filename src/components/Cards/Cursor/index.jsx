@@ -1,7 +1,9 @@
-export function Cursor({ className }) {
+import styles from "./../styles.module.css";
+
+export function Cursor() {
   return (
     <svg
-      className={className}
+      className={`${styles.icone} ${styles.iconeCursor}`}
       width="153"
       height="267"
       viewBox="0 0 153 267"
