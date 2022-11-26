@@ -16,11 +16,10 @@ export function Card({
   coresSinal,
   corIconeJanela,
 }) {
-  console.log(sinal);
   return (
     <div className={styles.cardWrapper}>
       <article className={styles.card}>
-        <header className={`${styles.cardHeader} ${corFundoHeader}`}>
+        <header className={`${styles.cardHeader} ${corFundoHeader} ${styles.sombra}`}>
           <div className={`${styles.circulosWrapper}`}>
             {listaCoresCirculos.map((cor) => {
               return <span className={`${styles.circulo} ${cor}`}></span>;
@@ -41,7 +40,7 @@ export function Card({
           </div>
         </header>
         <img
-          className={styles.cardImg}
+          className={`${styles.cardImg}  ${styles.sombra}`}
           src={imagem}
           alt={textoAlternativoImagem}
         />
