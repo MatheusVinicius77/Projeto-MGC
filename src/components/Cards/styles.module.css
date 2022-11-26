@@ -48,7 +48,8 @@
 }
 
 .cardSinal {
-    bottom: 0;
+    bottom: -200px;
     position: absolute;
-    right: 0;
+    right: -170px;
+    z-index: 100;
 }
