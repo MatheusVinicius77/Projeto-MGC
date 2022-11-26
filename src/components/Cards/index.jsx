@@ -12,7 +12,7 @@ export function Card({
   imagem,
   textoAlternativoImagem,
   sinal,
-  textoAlternativoSinal,
+  coresSinal,
   corIconeJanela,
 }) {
   return (
@@ -44,7 +44,11 @@ export function Card({
           alt={textoAlternativoImagem}
         />
       </article>
-      <IconeExclamacao className={styles.cardSinal} />
+      {sinal == "exclamação" ? (
+        <IconeExclamacao cores={coresSinal} className={styles.cardSinal} />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
