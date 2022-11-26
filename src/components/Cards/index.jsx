@@ -12,7 +12,7 @@ export function Card ({listaCoresCirculos, imagem, textoAlternativoImagem, sinal
                 <div className={`${styles.circulosWrapper}`}>
                     {
                         listaCoresCirculos.map(cor => {
-                            return <span className={`circulo ${cor}`}></span>;
+                            return <span className={`${styles.circulo} ${cor}`}></span>;
                         })
                     }
                 </div>
