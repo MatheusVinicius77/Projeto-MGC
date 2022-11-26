@@ -46,7 +46,6 @@
 
 .cardImg {
     border-radius: 0 0 38px 38px;
-    height: 400px;
     object-fit: cover;
     width: 100%;
 }
