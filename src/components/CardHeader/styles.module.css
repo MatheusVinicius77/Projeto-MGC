@@ -1,7 +1,7 @@
 .cardHeader {
     align-items: center;
+    border: 3px solid black;
     border-radius: 38px 38px 0 0;
-    border-bottom: 0;
     display: flex;
     justify-content: space-between;
     padding: 22px 25px;
