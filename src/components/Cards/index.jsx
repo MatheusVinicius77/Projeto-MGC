@@ -18,6 +18,7 @@ export function Card({
     <div className={styles.cardWrapper}>
       <article className={styles.card}>
         <CardHeader
+          className={styles.sombra}
           corFundoHeader={corFundoHeader}
           listaCoresCirculos={listaCoresCirculos}
           corIconeJanela={corIconeJanela}
