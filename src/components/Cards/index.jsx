@@ -17,7 +17,11 @@ export function Card({
   return (
     <div className={styles.cardWrapper}>
       <article className={styles.card}>
-        <CardHeader corFundoHeader={corFundoHeader} listaCoresCirculos={listaCoresCirculos} corIconeJanela={corIconeJanela} />
+        <CardHeader
+          corFundoHeader={corFundoHeader}
+          listaCoresCirculos={listaCoresCirculos}
+          corIconeJanela={corIconeJanela}
+        />
         <img
           className={`${styles.cardImg}  ${styles.sombra}`}
           src={imagem}
