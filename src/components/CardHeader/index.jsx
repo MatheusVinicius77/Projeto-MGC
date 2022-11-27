@@ -1,5 +1,6 @@
 import iconeMinimizacao from "../../assets/imgs/icones/traco.svg";
 import iconeFechar from "../../assets/imgs/icones/x.svg";
+import { IconeJanela } from "./IconeJanela";
 
 export function CardHeader () {
     return (
