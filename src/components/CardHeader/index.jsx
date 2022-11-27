@@ -2,7 +2,7 @@ import iconeMinimizacao from "../../assets/imgs/icones/traco.svg";
 import iconeFechar from "../../assets/imgs/icones/x.svg";
 import { IconeJanela } from "./IconeJanela";
 
-export function CardHeader () {
+export function CardHeader ({corFundoHeader, listaCoresCirculos, corIconeJanela}) {
     return (
         <header className={`${styles.cardHeader} ${corFundoHeader} ${styles.sombra}`}>
           <div className={`${styles.circulosWrapper}`}>
