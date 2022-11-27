@@ -3,6 +3,8 @@ import iconeFechar from "../../assets/imgs/icones/x.svg";
 
 import { IconeJanela } from "./IconeJanela";
 
+import styles from "./styles.module.css";
+
 export function CardHeader({
   corFundoHeader,
   listaCoresCirculos,
