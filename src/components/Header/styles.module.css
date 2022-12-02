@@ -1,0 +1,55 @@
+@import url("../../index.css");
+
+header {
+  width: 100vw;
+  height: 128px;
+  background-color: var(--color-grey-1);
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  padding-right: 46px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.list li {
+  font-size: var(--font-size-5);
+  font-family: 'Baloo 2', cursive;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+  padding-inline: 40px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    justify-content: space-between;
+  }
+  
+  .list {
+    display: none;
+  }
+
+  .logo img {
+    padding: 0;
+  }
+
+  .menu {
+    display: block;
+  }
+}
