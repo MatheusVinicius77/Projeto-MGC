@@ -1,6 +1,5 @@
 import style from "./styles.module.css"
 import X from "../../assets/imgs/icones/x.svg"
-import Reduzir from "../../assets/imgs/icones/minimiza-amarelo.svg"
 import Minimizar from "../../assets/imgs/icones/traco.svg"
 export default function Form(){
 
@@ -14,7 +13,6 @@ export default function Form(){
             </div>
             <div className="section-default flex">
                 <img className ={`${style.minimizar}`}src={Minimizar}/>
-                <img src={Reduzir} />
                 <img src={X}/>
             </div>
         </div>
