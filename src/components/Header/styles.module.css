@@ -1,18 +1,22 @@
 @import url("../../index.css");
 
-header {
+.headerDesktop {
   width: 100vw;
   height: 128px;
   background-color: var(--color-grey-1);
   display: flex;
   justify-content: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .logo img {
   padding-right: 46px;
 }
 
-.nav {
+.menuNav {
   display: flex;
   align-items: center;
 }
@@ -37,8 +41,10 @@ header {
 }
 
 @media (max-width: 1200px) {
-  header {
-    justify-content: space-between;
+  .headerDesktop {
+    display: none;
+    visibility: hidden;
+    z-index: -100;
   }
   
   .list {

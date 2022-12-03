@@ -2,24 +2,22 @@ import "./styles.module.css"
 import styles from "./styles.module.css"
 import logo from "../../assets/imgs/logo.svg"
 import { Button } from "../Button/index"
-import { useEffect, useRef } from "react"
+import { useState } from "react"
 
 export function Header(){
-  // useEffect(() => {
-    const btn = useRef();
+  const [isActive, setActive] = useState(false);
 
-    function handleMenu(){
-      console.log("oi");
-    }
-  // }, [])
+  const handleToggleMenu = () => {
+    setActive(!isActive);
+  };
 
   return(
-    <header>
+    <header className={styles.headerDesktop}>
       <div className={styles.logo}>
         <img src={logo} alt="Logo Projeto Minhas grandes crianças" />
       </div>
 
-      <nav className={styles.nav} ref={btn}>
+      <nav className={isActive ? styles.menuOpen : styles.menuNav}>
         <ul className={styles.list}>
           <li>Quem somos</li>
           <li>Depoimentos</li>
@@ -30,8 +28,6 @@ export function Header(){
           <Button title="Doação" size={true}/>
         </ul>
       </nav>
-
-      <button className={styles.menu} onClick={handleMenu}>Menu</button>
     </header>
   );
 }

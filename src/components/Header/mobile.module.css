@@ -1,0 +1,16 @@
+@import url("../../index.css");
+
+  .mobileHeader {
+    display: none;
+    visibility: hidden;
+  }
+
+
+@media (max-width: 1200px) {
+  .mobileHeader {
+    display: flex;
+    visibility: visible;
+    width: 100vw;
+    background-color: red;
+  }
+}
