@@ -29,7 +29,7 @@
 
 .list li {
   font-size: var(--font-size-5);
-  font-family: 'Baloo 2', cursive;
+  font-family: var(--font-family-1);;
   color: #fff;
   cursor: pointer;
 }
