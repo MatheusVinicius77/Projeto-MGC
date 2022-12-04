@@ -1,6 +1,6 @@
 import "./styles.module.css"
 import styles from "./styles.module.css"
-import logo from "../../assets/imgs/logo.svg"
+import logo from "../../assets/imgs/logobg.png"
 import { Button } from "../Button/index"
 import { useState } from "react"
 
@@ -12,15 +12,15 @@ export function Header(){
   };
 
   return(
-    <header className={styles.headerDesktop}>
+    <header className={`${styles.headerDesktop} ${isActive ? styles.headerPadding : ""}`}>
       <div className={styles.logoWrapper}>
-        <img src={logo} alt="Logo Projeto Minhas grandes crianças" />
+        <img src={logo} alt="Logo Projeto Minhas grandes crianças" className={styles.logoImg}/>
         <button className={styles.hamburguerButton} onClick={handleToggleMenu}>
-          <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/menu-rounded.png" />
+          <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/menu-rounded.png" alt="Menu Hamburguer"/>
         </button>
       </div>
 
-      <nav className={`${styles.menuOpen} ${!isActive ? styles.hidden : ""}`}>
+      <nav className={`${styles.menuOpen} ${!isActive ? styles.hidden: ""}`}>
         <ul className={styles.list}>
           <li>Quem somos</li>
           <li>Depoimentos</li>

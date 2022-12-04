@@ -3,7 +3,6 @@
 .headerDesktop {
   align-items: center;
   width: 100vw;
-  min-height: 128px;
   background-color: var(--color-grey-1);
   display: flex;
   justify-content: center;
@@ -11,7 +10,6 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  padding: 20px;
 }
 
 .logoWrapper {
@@ -21,8 +19,11 @@
   width: fit-content;
 }
 
-.logoWrapper img {
-  padding-right: 46px;
+.logoImg {
+  width: 180px;
+  height: 114px;
+  margin-right: 40px;
+  cursor: pointer;
 }
 
 .hamburguerButton {
@@ -60,13 +61,25 @@
   padding-inline: 40px;
 }
 
+.menuOpen {
+  padding-bottom: 0px;   
+}
+
 @media (max-width: 1200px) {
   .headerDesktop {
+    padding: 0 20px;
     flex-direction: column;
   }
 
   .list {
     flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .list li {
+    text-align: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .logoWrapper {
