@@ -1,8 +1,9 @@
 @import url("../../index.css");
 
 .headerDesktop {
+  align-items: center;
   width: 100vw;
-  height: 128px;
+  min-height: 128px;
   background-color: var(--color-grey-1);
   display: flex;
   justify-content: center;
@@ -10,15 +11,34 @@
   position: fixed;
   top: 0;
   z-index: 100;
+  padding: 20px;
 }
 
-.logo img {
+.logoWrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.logoWrapper img {
   padding-right: 46px;
+}
+
+.hamburguerButton {
+  background-color: transparent;
+  display: none;
+  height: fit-content;
 }
 
 .menuNav {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: flex;
 }
 
 .list {
@@ -42,17 +62,27 @@
 
 @media (max-width: 1200px) {
   .headerDesktop {
-    display: none;
-    visibility: hidden;
-    z-index: -100;
-  }
-  
-  .list {
-    display: none;
+    flex-direction: column;
   }
 
-  .logo img {
+  .list {
+    flex-direction: column;
+  }
+
+  .logoWrapper {
+    width: 100%;
+  }
+
+  .logoWrapper img {
     padding: 0;
+  }
+
+  .hamburguerButton {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .menu {

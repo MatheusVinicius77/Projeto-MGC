@@ -13,11 +13,14 @@ export function Header(){
 
   return(
     <header className={styles.headerDesktop}>
-      <div className={styles.logo}>
+      <div className={styles.logoWrapper}>
         <img src={logo} alt="Logo Projeto Minhas grandes crianças" />
+        <button className={styles.hamburguerButton} onClick={handleToggleMenu}>
+          <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/menu-rounded.png" />
+        </button>
       </div>
 
-      <nav className={isActive ? styles.menuOpen : styles.menuNav}>
+      <nav className={`${styles.menuOpen} ${!isActive ? styles.hidden : ""}`}>
         <ul className={styles.list}>
           <li>Quem somos</li>
           <li>Depoimentos</li>
