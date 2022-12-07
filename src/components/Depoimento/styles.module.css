@@ -59,3 +59,7 @@
     font-size: var(--font-size-5);   
     color: var(--color-grey-1);
 }
+
+.textoDepoimento{
+    margin-top: 32px;
+}

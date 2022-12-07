@@ -30,6 +30,10 @@ export function Depoimento({
                             {/* Inacabada. */}
                         </div>
                     </div>
+                    <div className={`${styles.textoDepoimento} ${styles.statusAutor}`}>
+                        Texto do depoimento
+                        {/* Inacabada. */}
+                    </div>
                 </div> 
             </article>
         </div>
