@@ -15,7 +15,13 @@ export function Depoimento({
                 corFundoHeader={corFundoHeader}
                 listaCoresCirculos={listaCoresCirculos}
                 corIconeJanela={corIconeJanela}
-                /> 
+                />
+
+                <div className={`${styles.cardHeader}  ${styles.sombra}`}>
+                    <div className={styles.boxFoto}>
+                        
+                    </div>
+                </div> 
             </article>
         </div>
     );
