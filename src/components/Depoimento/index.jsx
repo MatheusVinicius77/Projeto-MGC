@@ -16,7 +16,7 @@ export function Depoimento({
                 listaCoresCirculos={listaCoresCirculos}
                 corIconeJanela={corIconeJanela}
                 />
-
+                {/* Parte inic */}
                 <div className={`${styles.cardHeader}  ${styles.sombra}`}>
                     <div className={styles.boxFoto}>
                         {/* Por hora tem apenas o box, mas irei atualizar para ter imagens */}
@@ -24,7 +24,11 @@ export function Depoimento({
 
                     <div className={styles.infoAutor}>
                         <h2 className={styles.nomeAutor}>Nome de quem depõe</h2>
-                         {/* Por hora tem apenas o texto padrão no site, mas irei atualizar para ter o respectivo nome do autor */}
+                        {/* Por hora tem apenas o texto padrão no site, mas irei atualizar para ter o respectivo nome do autor */}
+                        <div className={styles.statusAutor}>
+                            Status (ex.: voluntário; pai; criança; adolescente)
+                            {/* Inacabada. */}
+                        </div>
                     </div>
                 </div> 
             </article>

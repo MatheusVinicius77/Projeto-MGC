@@ -52,3 +52,10 @@
     line-height: 150%;
 
 }
+
+.statusAutor{
+    line-height: 120%;
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-5);   
+    color: var(--color-grey-1);
+}
