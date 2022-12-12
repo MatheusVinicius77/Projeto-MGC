@@ -2,6 +2,7 @@ import { Card } from "../../components/Cards";
 import { Header } from "../../components/Header";
 import bailarina from "../../assets/imgs/fotos/dancarina.svg";
 import styles from "./styles.module.css";
+import { Button } from "../../components/Button";
 
 export function Homepage() {
   return (
@@ -13,12 +14,13 @@ export function Homepage() {
             <div className={`column flex ${styles.sectionTexto}`}>
               <div className={styles.sectionTitulo}>
                 <h3 className="text-3">Conheça o Projeto</h3>
-                <h1 className="title-1">Minhas Grandes Crianças</h1>
+                <h1 className="title-1 weight-1">Minhas Grandes Crianças</h1>
               </div>
               <p className="text-2">
                 Espaço cultural, social e esportivo que busca desenvolver
                 crianças e jovens através da arte e da educação.
               </p>
+              <Button title="Quero ser voluntário!" />
             </div>
           </article>
           <Card
