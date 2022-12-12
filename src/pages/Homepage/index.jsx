@@ -7,11 +7,11 @@ export function Homepage() {
   return (
     <>
       <Header />
-      <section className="bg-brand-2 flex justify-center">
+      <section className={`bg-brand-2 flex justify-center ${styles.sectionConteudo}`}>
         <div className="container flex align-center justify-between">
           <article>
-            <div className={`column flex ${styles.sectionText}`}>
-              <div className={styles.sectionTitle}>
+            <div className={`column flex ${styles.sectionTexto}`}>
+              <div className={styles.sectionTitulo}>
                 <h3 className="text-3">Conheça o Projeto</h3>
                 <h1 className="title-1">Minhas Grandes Crianças</h1>
               </div>

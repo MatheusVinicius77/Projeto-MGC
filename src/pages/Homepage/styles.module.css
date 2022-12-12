@@ -1,9 +1,13 @@
-.sectionText {
+.sectionTexto {
   gap: 30px;
   max-width: 552px;
   width: 100%;
 }
 
-.sectionTitle {
+.sectionTitulo {
   gap: 20px;
+}
+
+.sectionConteudo {
+  padding: 80px 20px;
 }
