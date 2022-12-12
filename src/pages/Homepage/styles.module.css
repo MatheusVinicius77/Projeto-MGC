@@ -1,0 +1,9 @@
+.sectionText {
+  gap: 30px;
+  max-width: 552px;
+  width: 100%;
+}
+
+.sectionTitle {
+  gap: 20px;
+}
