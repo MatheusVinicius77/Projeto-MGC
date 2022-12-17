@@ -16,10 +16,18 @@ export function Homepage() {
     <>
       <Header />
       <div className={`column flex justify-center ${styles.sectionWrapper}`}>
-        <section
-          className="bg-brand-2 flex justify-center"
-        >
-          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
+        <section className="bg-brand-2 flex justify-center">
+          <div
+            className={`container flex align-center justify-between row-reverse ${styles.sectionConteudo}`}
+          >
+            <Card
+              corFundoHeader="bg-brand-5"
+              listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-2"]}
+              imagem={bailarina}
+              textoAlternativoImagem="menina negra, vestindo uma roupa de bailarina dourada, com as mãos na cintura, sorrindo para a câmera"
+              coresSinal={["#F5487E", "#73D676"]}
+              corIconeJanela="#F5487E"
+            />
             <article>
               <div className={`column flex ${styles.sectionTexto}`}>
                 <div className={styles.sectionTitulo}>
@@ -33,21 +41,13 @@ export function Homepage() {
                 <Button title="Quero ser voluntário!" />
               </div>
             </article>
-            <Card
-              corFundoHeader="bg-brand-5"
-              listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-2"]}
-              imagem={bailarina}
-              textoAlternativoImagem="menina negra, vestindo uma roupa de bailarina dourada, com as mãos na cintura, sorrindo para a câmera"
-              coresSinal={["#F5487E", "#73D676"]}
-              corIconeJanela="#F5487E"
-            />
           </div>
         </section>
-        <section
-          className="align-center bg-brand-1 flex column justify-center"
-        >
+        <section className="align-center bg-brand-1 flex column justify-center">
           <img src={formaAmarelaHeader} alt="" />
-          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
+          <div
+            className={`container flex align-center justify-between ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]}
@@ -70,11 +70,19 @@ export function Homepage() {
             </article>
           </div>
         </section>
-        <section
-          className="align-center bg-brand-2 column flex justify-center"
-        >
+        <section className="align-center bg-brand-2 column flex justify-center">
           <img src={formaRoxaOficinas} alt="" />
-          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
+          <div
+            className={`container flex align-center justify-between row-reverse ${styles.sectionConteudo}`}
+          >
+            <Card
+              corFundoHeader="bg-brand-5"
+              listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}
+              imagem={lista}
+              textoAlternativoImagem="placa com uma lista de atividades fornecida pelo projeto mgc"
+              sinal="cursor"
+              corIconeJanela="#BC54F0"
+            />
             <article>
               <div className={`column flex ${styles.sectionTexto}`}>
                 <h2 className="title-2 weight-1">Projetos e oficinas</h2>
@@ -88,21 +96,13 @@ export function Homepage() {
                 <Button title="Ver projetos e oficinas!" />
               </div>
             </article>
-            <Card
-              corFundoHeader="bg-brand-5"
-              listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}
-              imagem={lista}
-              textoAlternativoImagem="placa com uma lista de atividades fornecida pelo projeto mgc"
-              sinal="cursor"
-              corIconeJanela="#BC54F0"
-            />
           </div>
         </section>
-        <section
-          className="align-center bg-brand-1 column flex justify-center"
-        >
+        <section className="align-center bg-brand-1 column flex justify-center">
           <img src={formaAmarelaApadrinhamentos} alt="" />
-          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
+          <div
+            className={`container flex align-center justify-between ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}
@@ -124,13 +124,17 @@ export function Homepage() {
             </article>
           </div>
         </section>
-        <section
-          className="align-center bg-brand-2 column flex justify-center"
-        >
+        <section className="align-center bg-brand-2 column flex justify-center">
           <img src={formaRoxaApadrinhamento} alt="" />
-          <div className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}>
+          <div
+            className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}
+          >
             <h2 className="title-2 weight-1">Depoimentos</h2>
-            <Depoimento corFundoHeader="bg-brand-4" listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]} corIconeJanela="#73D676" />
+            <Depoimento
+              corFundoHeader="bg-brand-4"
+              listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]}
+              corIconeJanela="#73D676"
+            />
             <Button title="Saiba mais!" />
           </div>
         </section>
