@@ -9,6 +9,7 @@ import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-4.svg";
 import formaAmarelaApadrinhamentos from "../../assets/imgs/formas/forma-amarela-2.svg";
 import formaRoxaOficinas from "../../assets/imgs/formas/forma-roxa-1.svg";
 import formaRoxaApadrinhamento from "../../assets/imgs/formas/forma-roxa-3.svg";
+import { Depoimento } from "../../components/Depoimento";
 
 export function Homepage() {
   return (
@@ -127,8 +128,9 @@ export function Homepage() {
           className="align-center bg-brand-2 column flex justify-center"
         >
           <img src={formaRoxaApadrinhamento} alt="" />
-          <div className={`container flex align-center justify-center ${styles.sectionConteudo}`}>
-            <h2 className="title-2 weight-1">Depoimentos</h2>
+          <div className={`container column flex align-center justify-center ${styles.sectionConteudo}`}>
+            <h2 className={`title-2 weight-1 ${styles.tituloDepoimento}`}>Depoimentos</h2>
+            <Depoimento corFundoHeader="bg-brand-4" listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]} corIconeJanela="#73D676" />
           </div>
         </section>
       </div>

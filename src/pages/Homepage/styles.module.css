@@ -15,3 +15,8 @@
 .sectionConteudo {
   padding: 80px 20px 0;
 }
+
+.tituloDepoimento {
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
