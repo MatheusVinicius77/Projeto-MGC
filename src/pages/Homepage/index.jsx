@@ -5,7 +5,9 @@ import teatro from "../../assets/imgs/fotos/teatro.svg";
 import lista from "../../assets/imgs/fotos/lista.svg";
 import styles from "./styles.module.css";
 import { Button } from "../../components/Button";
-import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-1.svg";
+import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-4.svg";
+import formaAmarelaApadrinhamentos from "../../assets/imgs/formas/forma-amarela-2.svg";
+import formaRoxaOficinas from "../../assets/imgs/formas/forma-roxa-1.svg";
 
 export function Homepage() {
   return (
@@ -13,9 +15,9 @@ export function Homepage() {
       <Header />
       <div className={`column flex justify-center ${styles.sectionWrapper}`}>
         <section
-          className={`bg-brand-2 flex justify-center ${styles.sectionConteudo}`}
+          className="bg-brand-2 flex justify-center"
         >
-          <div className="container flex align-center justify-between">
+          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
             <article>
               <div className={`column flex ${styles.sectionTexto}`}>
                 <div className={styles.sectionTitulo}>
@@ -40,9 +42,10 @@ export function Homepage() {
           </div>
         </section>
         <section
-          className={`bg-brand-1 flex justify-center ${styles.sectionConteudo}`}
+          className="align-center bg-brand-1 flex column justify-center"
         >
-          <div className="container flex align-center justify-between">
+          <img src={formaAmarelaHeader} alt="" />
+          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]}
@@ -66,9 +69,10 @@ export function Homepage() {
           </div>
         </section>
         <section
-          className={`bg-brand-2 flex justify-center ${styles.sectionConteudo}`}
+          className="align-center bg-brand-2 column flex justify-center"
         >
-          <div className="container flex align-center justify-between">
+          <img src={formaRoxaOficinas} alt="" />
+          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
             <article>
               <div className={`column flex ${styles.sectionTexto}`}>
                 <h2 className="title-2 weight-1">Projetos e oficinas</h2>
@@ -93,9 +97,10 @@ export function Homepage() {
           </div>
         </section>
         <section
-          className={`bg-brand-1 flex justify-center ${styles.sectionConteudo}`}
+          className="align-center bg-brand-1 column flex justify-center"
         >
-          <div className="container flex align-center justify-between">
+          <img src={formaAmarelaApadrinhamentos} alt="" />
+          <div className={`container flex align-center justify-between ${styles.sectionConteudo}`}>
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}

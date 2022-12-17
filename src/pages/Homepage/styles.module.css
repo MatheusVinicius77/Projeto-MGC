@@ -1,5 +1,4 @@
 .sectionWrapper {
-  position: relative;
   width: 100%;
 }
 
@@ -15,9 +14,4 @@
 
 .sectionConteudo {
   padding: 80px 20px;
-}
-
-.forma {
-  position: absolute;
-  top: 0;
 }
