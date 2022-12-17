@@ -110,9 +110,9 @@ export default function Form(){
                 <div className={` ${style.ball} bg-brand-2`}></div>
             </div>
             <div className="section-default flex">
-                <img className ={`${style.minimizar}`}src={Minimizar}/>
-                <img src={`${Reduzir}`}/>
-                <img src={X}/>
+                <img className ={`${style.minimizar}`}src={Minimizar} alt=""/>
+                <img src={`${Reduzir}`} alt=""/>
+                <img src={X} alt=""/>
             </div>
         </div>
         <form action="" className="flex wrap align-center justify-center" onSubmit={onSubmit}>
