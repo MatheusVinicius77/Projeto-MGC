@@ -1,3 +1,8 @@
+.sectionWrapper {
+  position: relative;
+  width: 100%;
+}
+
 .sectionTexto {
   gap: 30px;
   max-width: 552px;
@@ -10,4 +15,9 @@
 
 .sectionConteudo {
   padding: 80px 20px;
+}
+
+.forma {
+  position: absolute;
+  top: 0;
 }
