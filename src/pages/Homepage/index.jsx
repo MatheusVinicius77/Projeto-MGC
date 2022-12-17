@@ -8,6 +8,7 @@ import { Button } from "../../components/Button";
 import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-4.svg";
 import formaAmarelaApadrinhamentos from "../../assets/imgs/formas/forma-amarela-2.svg";
 import formaRoxaOficinas from "../../assets/imgs/formas/forma-roxa-1.svg";
+import formaRoxaApadrinhamento from "../../assets/imgs/formas/forma-roxa-3.svg";
 
 export function Homepage() {
   return (
@@ -120,6 +121,14 @@ export function Homepage() {
                 <Button title="Apadrinhe uma criança!" />
               </div>
             </article>
+          </div>
+        </section>
+        <section
+          className="align-center bg-brand-2 column flex justify-center"
+        >
+          <img src={formaRoxaApadrinhamento} alt="" />
+          <div className={`container flex align-center justify-center ${styles.sectionConteudo}`}>
+            <h2 className="title-2 weight-1">Depoimentos</h2>
           </div>
         </section>
       </div>
