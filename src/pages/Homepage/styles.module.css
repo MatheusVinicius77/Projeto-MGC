@@ -16,7 +16,11 @@
   padding: 80px 20px 0;
 }
 
-.tituloDepoimento {
+.sectionDepoimento h2 {
   margin-bottom: 75px;
   text-transform: uppercase;
+}
+
+.sectionDepoimento button {
+  margin-top: 56px;
 }

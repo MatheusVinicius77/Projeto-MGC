@@ -128,9 +128,10 @@ export function Homepage() {
           className="align-center bg-brand-2 column flex justify-center"
         >
           <img src={formaRoxaApadrinhamento} alt="" />
-          <div className={`container column flex align-center justify-center ${styles.sectionConteudo}`}>
-            <h2 className={`title-2 weight-1 ${styles.tituloDepoimento}`}>Depoimentos</h2>
+          <div className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}>
+            <h2 className="title-2 weight-1">Depoimentos</h2>
             <Depoimento corFundoHeader="bg-brand-4" listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]} corIconeJanela="#73D676" />
+            <Button title="Saiba mais!" />
           </div>
         </section>
       </div>
