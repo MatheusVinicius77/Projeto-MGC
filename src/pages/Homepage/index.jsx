@@ -92,6 +92,31 @@ export function Homepage() {
             />
           </div>
         </section>
+        <section
+          className={`bg-brand-1 flex justify-center ${styles.sectionConteudo}`}
+        >
+          <div className="container flex align-center justify-between">
+            <Card
+              corFundoHeader="bg-brand-4"
+              listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}
+              imagem={bailarina}
+              textoAlternativoImagem="menina negra, vestindo uma roupa de bailarina dourada, com as mãos na cintura, sorrindo para a câmera"
+              coresSinal={["#FFCF32", "#73D676"]}
+              corIconeJanela="#73D676"
+            />
+            <article>
+              <div className={`column flex ${styles.sectionTexto}`}>
+                <h2 className="title-2 weight-1">Apadrinhamento</h2>
+                <p className="text-2">
+                  Apadrinhar uma criança é um ato de amor! Acolher um futuro é
+                  abrir uma infinidade de possibilidades a quem precisa!
+                  Apadrinhe uma criança e seja parte da transformação!
+                </p>
+                <Button title="Apadrinhe uma criança!" />
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </>
   );
