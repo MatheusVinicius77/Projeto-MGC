@@ -24,3 +24,10 @@
 .sectionDepoimento button {
   margin-top: 56px;
 }
+
+@media (max-width: 1225px) {
+  .sectionConteudo {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
