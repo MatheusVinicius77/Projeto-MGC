@@ -30,7 +30,7 @@ export function Homepage() {
             />
             <article>
               <div className={`column flex ${styles.sectionTexto}`}>
-                <div className={styles.sectionTitulo}>
+                <div className={`flex column ${styles.sectionTitulo}`}>
                   <h3 className="text-3">Conheça o Projeto</h3>
                   <h1 className="title-1 weight-1">Minhas Grandes Crianças</h1>
                 </div>
