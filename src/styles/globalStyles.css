@@ -24,6 +24,10 @@
   line-height: 100%;
 }
 
+p {
+  line-height: 150%;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -36,4 +40,15 @@ body {
 
 .logo {
   width: 180px;
+}
+
+@media (max-width: 680px) {
+  :root {
+    --font-size-1: 38px;
+    --font-size-2: 30px;
+    --font-size-3: 23px;
+    --font-size-4: 20px;
+    --font-size-5: 16px;
+    --font-size-6: 14px;
+  }
 }
