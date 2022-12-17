@@ -2,6 +2,7 @@ import { Card } from "../../components/Cards";
 import { Header } from "../../components/Header";
 import bailarina from "../../assets/imgs/fotos/dancarina.svg";
 import teatro from "../../assets/imgs/fotos/teatro.svg";
+import lista from "../../assets/imgs/fotos/lista.svg";
 import styles from "./styles.module.css";
 import { Button } from "../../components/Button";
 import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-1.svg";
@@ -10,10 +11,10 @@ export function Homepage() {
   return (
     <>
       <Header />
-      <div
-        className={`column flex justify-center ${styles.sectionWrapper}`}
-      >
-        <section className={`bg-brand-2 flex justify-center ${styles.sectionConteudo}`}>
+      <div className={`column flex justify-center ${styles.sectionWrapper}`}>
+        <section
+          className={`bg-brand-2 flex justify-center ${styles.sectionConteudo}`}
+        >
           <div className="container flex align-center justify-between">
             <article>
               <div className={`column flex ${styles.sectionTexto}`}>
@@ -38,7 +39,9 @@ export function Homepage() {
             />
           </div>
         </section>
-        <section className={`bg-brand-1 flex justify-center ${styles.sectionConteudo}`}>
+        <section
+          className={`bg-brand-1 flex justify-center ${styles.sectionConteudo}`}
+        >
           <div className="container flex align-center justify-between">
             <Card
               corFundoHeader="bg-brand-4"
@@ -60,6 +63,33 @@ export function Homepage() {
                 <Button title="Conheça!" />
               </div>
             </article>
+          </div>
+        </section>
+        <section
+          className={`bg-brand-2 flex justify-center ${styles.sectionConteudo}`}
+        >
+          <div className="container flex align-center justify-between">
+            <article>
+              <div className={`column flex ${styles.sectionTexto}`}>
+                <h2 className="title-2 weight-1">Projetos e oficinas</h2>
+                <p className="text-2">
+                  Estamos, atualmente, retornando, de forma gradual, as
+                  atividades de todas as oficinas. Antes da pandemia contávamos
+                  com professores voluntários que hoje não podem mais atuar no
+                  projeto, necessitando do pagamento de alguns educadores para
+                  que possamos retomar 100% com todas as oficinas.
+                </p>
+                <Button title="Ver projetos e oficinas!" />
+              </div>
+            </article>
+            <Card
+              corFundoHeader="bg-brand-5"
+              listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}
+              imagem={lista}
+              textoAlternativoImagem="placa com uma lista de atividades fornecida pelo projeto mgc"
+              sinal="cursor"
+              corIconeJanela="#BC54F0"
+            />
           </div>
         </section>
       </div>
