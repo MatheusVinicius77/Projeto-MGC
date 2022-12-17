@@ -70,9 +70,16 @@ form{
 }
 
 .span{
-    color: #F5487E;
+    color: white;
+    margin-top: 4px;
+    font-family: 'Montserrat';
+    font-weight: 400px;
+    font-size: 13px;
 }
 
+.email{
+
+}
 .button{
     background-color: #3FB9FF;
     width: 13vh;
@@ -80,6 +87,8 @@ form{
     border-radius: 2vh;
     border: none;
     margin-top: 2vh;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 img{
