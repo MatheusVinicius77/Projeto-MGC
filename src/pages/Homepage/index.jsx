@@ -44,7 +44,7 @@ export function Homepage() {
           </div>
         </section>
         <section className="align-center bg-brand-1 flex column justify-center">
-          <img src={formaAmarelaHeader} alt="" />
+          <img className={styles.forma} src={formaAmarelaHeader} alt="" />
           <div
             className={`container flex align-center justify-between ${styles.sectionConteudo}`}
           >
@@ -71,7 +71,7 @@ export function Homepage() {
           </div>
         </section>
         <section className="align-center bg-brand-2 column flex justify-center">
-          <img src={formaRoxaOficinas} alt="" />
+          <img className={styles.forma} src={formaRoxaOficinas} alt="" />
           <div
             className={`container flex align-center justify-between row-reverse ${styles.sectionConteudo}`}
           >
@@ -99,7 +99,7 @@ export function Homepage() {
           </div>
         </section>
         <section className="align-center bg-brand-1 column flex justify-center">
-          <img src={formaAmarelaApadrinhamentos} alt="" />
+          <img className={styles.forma} src={formaAmarelaApadrinhamentos} alt="" />
           <div
             className={`container flex align-center justify-between ${styles.sectionConteudo}`}
           >
@@ -125,7 +125,7 @@ export function Homepage() {
           </div>
         </section>
         <section className="align-center bg-brand-2 column flex justify-center">
-          <img src={formaRoxaApadrinhamento} alt="" />
+          <img className={styles.forma} src={formaRoxaApadrinhamento} alt="" />
           <div
             className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}
           >

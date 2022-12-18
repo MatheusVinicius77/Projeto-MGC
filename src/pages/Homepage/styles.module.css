@@ -25,6 +25,10 @@
   margin-top: 56px;
 }
 
+.forma {
+  width: 100%;
+}
+
 @media (max-width: 1225px) {
   .sectionConteudo {
     flex-direction: column;
