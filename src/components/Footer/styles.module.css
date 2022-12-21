@@ -1,0 +1,43 @@
+
+@import url("../../index.css");
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    display: flexbox;
+}
+
+.RedesSociais{
+    height: 830px;
+    width: 1770px;
+    display: inline-flex;
+    margin-top: 790px;
+    margin-bottom: 0px;
+    margin-left: 190px;
+    position:absolute;
+}
+
+.logo{
+    height: 140px;
+    width: 140px;
+    display: flex;
+    margin-top: 650px;
+    margin-bottom: 0px;
+    margin-left: 190px;
+    position:absolute;
+    display: inline;
+}
+
+.Lista {
+    font-family: 'Baloo 2', cursive;
+    color: black;
+    display: list-item;
+    position: static;
+    width: 700px;
+    bottom: 0px;
+    margin-top: 600px;
+    
+}
