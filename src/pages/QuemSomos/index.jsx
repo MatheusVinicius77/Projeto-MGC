@@ -12,7 +12,7 @@ export function QuemSomos() {
       <Header />
       <main className={`bg-brand-2 ${styles.wrapper}`}>
         <h1 className={`title-1 ${styles.textCenter}`}>Quem somos</h1>
-        <section className={styles.section}>
+        <section className={`flex column ${styles.section} ${styles.sectionValores}`}>
           <TextIcon textContent={missaoTexto} title="Missão" iconColor="rosa" />
           <TextIcon textContent={visaoTexto} title="Visão" iconColor="azul" />
           <TextIcon textContent={valoresTexto} title="Valores" iconColor="roxa" />
