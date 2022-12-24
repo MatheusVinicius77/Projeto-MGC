@@ -5,9 +5,12 @@ export function QuemSomos() {
   return (
     <>
       <Header />
-      <section className={`bg-brand-2 ${styles.wrapper}`}>
+      <main className={`bg-brand-2 ${styles.wrapper}`}>
         <h1 className={`title-1 ${styles.textCenter}`}>Quem somos</h1>
-      </section>
+        <section className={styles.section}>
+
+        </section>
+      </main>
     </>
   );
 }
