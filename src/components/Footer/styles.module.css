@@ -1,3 +1,7 @@
+.logoWrapper {
+  gap: 10px;
+}
+
 .logo {
   object-fit: contain;
   height: 100px;
@@ -5,17 +9,19 @@
 }
 
 .listIcons {
+  margin: 0 auto;
   gap: 10px;
+  width: fit-content;
 }
 
 .listIcons img {
-  width: 48px;
+  width: 35px;
 }
 
 .footerInnerContainer {
   max-width: 1163px;
   margin: 0 auto;
-  gap: 50px;
+  gap: 30px;
   padding: 81px 30px;
   width: fit-content;
 }
@@ -24,16 +30,25 @@
   gap: 8px;
 }
 
-.emailWrapper {
-  gap: 10px;
+.contatoList a {
+  word-break: break-all;
+  color: inherit;
 }
 
 @media (min-width: 920px) {
+  .logoWrapper {
+    align-items: flex-start;
+  }
+
   .footerInnerContainer {
     align-items: center;
     flex-direction: row;
     gap: 0;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .listIcons img {
+    width: 48px;
   }
 }

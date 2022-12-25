@@ -9,8 +9,10 @@ import email from "../../assets/imgs/redes-sociais/email-branco.svg";
 export default function Footer() {
   return (
     <footer className="bg-grey-1">
-      <div className={`flex column justify-evenly ${styles.footerInnerContainer}`}>
-        <div>
+      <div
+        className={`flex column justify-evenly ${styles.footerInnerContainer}`}
+      >
+        <div className={`align-center column flex ${styles.logoWrapper}`}>
           <img src={logo} className={styles.logo} />
           <ul className={`align-center flex ${styles.listIcons}`}>
             <li>
@@ -56,15 +58,17 @@ export default function Footer() {
             <dt hidden>Referência</dt>
             <dd className="text-3 color-grey-0">Ref. Rua Sarjento Rego</dd>
             <dt hidden>Telefone</dt>
-            <dd>
-              <a className="text-3 color-grey-0" href="">(21) 9 6708-1641</a>
+            <dd className="text-3 color-grey-0">
+              <a href="">
+                (21) 9 6708-1641
+              </a>
             </dd>
-            <div className={`flex ${styles.emailWrapper}`}>
-              <dt className="text-3 color-grey-0">Email: </dt>
-              <dd>
-                <a className="text-3 color-grey-0" href="">mgcprojeto8@gmail.com</a>
-              </dd>
-            </div>
+            <dd className="text-3 color-grey-0" >
+              Email:
+              <a href="">
+                mgcprojeto8@gmail.com
+              </a>
+            </dd>
           </dl>
         </article>
       </div>
