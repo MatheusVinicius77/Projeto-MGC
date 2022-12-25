@@ -9,7 +9,7 @@
 
 .section {
   margin: 0 auto;
-  padding: 30px;
+  padding-inline: 30px;
 }
 
 .sectionValores {
@@ -29,6 +29,7 @@
 
 .sectionCard {
   gap: 150px;
+  padding-block: 40px;
 }
 
 @media (max-width: 1225px) {
