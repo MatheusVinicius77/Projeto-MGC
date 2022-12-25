@@ -8,6 +8,10 @@
   width: 160px;
 }
 
+.onda {
+  width: 100%;
+}
+
 .listIcons {
   margin: 0 auto;
   gap: 10px;
@@ -22,7 +26,7 @@
   max-width: 1163px;
   margin: 0 auto;
   gap: 30px;
-  padding: 81px 30px;
+  padding: 20px 81px 30px;
   width: fit-content;
 }
 

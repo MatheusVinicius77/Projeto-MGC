@@ -5,10 +5,13 @@ import facebook from "../../assets/imgs/redes-sociais/facebook-branco.svg";
 import linkedin from "../../assets/imgs/redes-sociais/linkedin-branco.svg";
 import logo from "../../assets/imgs/logobg.png";
 import email from "../../assets/imgs/redes-sociais/email-branco.svg";
+import ondaAmarela from "../../assets/imgs/formas/forma-amarela-2.svg";
+import ondaRoxa from "../../assets/imgs/formas/forma-roxa-1.svg";
 
-export default function Footer() {
+export default function Footer({ondaRoxa}) {
   return (
     <footer className="bg-grey-1">
+      <img className={styles.onda} src={ondaRoxa ? ondaRoxa : ondaAmarela} />
       <div
         className={`flex column justify-evenly ${styles.footerInnerContainer}`}
       >
@@ -17,12 +20,12 @@ export default function Footer() {
           <ul className={`align-center flex ${styles.listIcons}`}>
             <li>
               <a href="https://www.instagram.com/projetomgc/" target="_blank">
-                <img src={instagram}></img>
+                <img src={instagram} />
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/ProjetoMgc/" target="_blank">
-                <img src={facebook}></img>
+                <img src={facebook} />
               </a>
             </li>
             <li>
@@ -30,7 +33,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/minhasgrandescriancas/"
                 target="_blank"
               >
-                <img src={linkedin}></img>
+                <img src={linkedin} />
               </a>
             </li>
             <li>
