@@ -15,5 +15,14 @@
 .footerInnerContainer {
   max-width: 1163px;
   margin: 0 auto;
+  padding-block: 81px;
   width: 100%;
+}
+
+.contatoList {
+  gap: 8px;
+}
+
+.emailWrapper {
+  gap: 10px;
 }

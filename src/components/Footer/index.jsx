@@ -48,7 +48,7 @@ export default function Footer() {
         </ul>
         <article>
           <h2 className="title-3 color-grey-0">Fale conosco</h2>
-          <dl>
+          <dl className={`flex column ${styles.contatoList}`}>
             <dt hidden>Rua</dt>
             <dd className="text-3 color-grey-0">
               Rua das crianças N° 1 - Anchieta
@@ -56,13 +56,13 @@ export default function Footer() {
             <dt hidden>Referência</dt>
             <dd className="text-3 color-grey-0">Ref. Rua Sarjento Rego</dd>
             <dt hidden>Telefone</dt>
-            <dd className="text-3 color-grey-0">
-              <a href="">(21) 9 6708-1641</a>
+            <dd>
+              <a className="text-3 color-grey-0" href="">(21) 9 6708-1641</a>
             </dd>
-            <div className="flex">
+            <div className={`flex ${styles.emailWrapper}`}>
               <dt className="text-3 color-grey-0">Email: </dt>
-              <dd className="text-3 color-grey-0">
-                <a href="">mgcprojeto8@gmail.com</a>
+              <dd>
+                <a className="text-3 color-grey-0" href="">mgcprojeto8@gmail.com</a>
               </dd>
             </div>
           </dl>
