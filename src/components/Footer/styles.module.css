@@ -1,0 +1,9 @@
+.logo {
+  object-fit: contain;
+  height: 100px;
+  width: 160px;
+}
+
+.listIcons img {
+  width: 48px;
+}
