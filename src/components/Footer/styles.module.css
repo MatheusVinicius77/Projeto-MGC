@@ -26,8 +26,16 @@
   max-width: 1163px;
   margin: 0 auto;
   gap: 30px;
-  padding: 20px 81px 30px;
+  padding: 40px 81px 80px;
   width: fit-content;
+}
+
+.footerInnerContainer ul {
+  gap: 8px;
+}
+
+.footerInnerContainer h2 {
+  margin-bottom: 15px;
 }
 
 .contatoList {
@@ -53,6 +61,6 @@
   }
 
   .listIcons img {
-    width: 48px;
+    width: 40px;
   }
 }
