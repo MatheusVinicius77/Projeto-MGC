@@ -8,7 +8,7 @@ import email from "../../assets/imgs/redes-sociais/email.svg";
 
 export default function Footer() {
   return (
-    <footer className="align-center bg-grey-1 flex">
+    <footer className="align-center bg-grey-1 flex justify-evenly">
       <div>
         <img src={logo} className={styles.logo} />
         <ul className={`align-center flex ${styles.listIcons}`}>
@@ -45,6 +45,21 @@ export default function Footer() {
         <li className="text-1 color-grey-0">Contato</li>
         <li className="text-1 color-grey-0">Apadrinhamento</li>
       </ul>
+      <article>
+        <h2 className="title-3 color-grey-0">Fale conosco</h2>
+        <dl>
+          <dt hidden>Rua</dt>
+          <dd className="text-3 color-grey-0">Rua das crianças N° 1 - Anchieta</dd>
+          <dt hidden>Referência</dt>
+          <dd className="text-3 color-grey-0">Ref. Rua Sarjento Rego</dd>
+          <dt hidden>Telefone</dt>
+          <dd className="text-3 color-grey-0"><a href="">(21) 9 6708-1641</a></dd>
+          <div className="flex">
+            <dt className="text-3 color-grey-0">Email: </dt>
+            <dd className="text-3 color-grey-0"><a href="">mgcprojeto8@gmail.com</a></dd>
+          </div>
+        </dl>
+      </article>
     </footer>
   );
 }
