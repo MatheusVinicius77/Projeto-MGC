@@ -34,4 +34,13 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  .sectionDepoimento > h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .sectionDepoimento button {
+    margin-top: 10px;
+  }
 }
