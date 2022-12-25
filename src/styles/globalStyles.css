@@ -14,8 +14,8 @@
   --font-size-5: 19px; 
   --font-size-6: 16px; 
 
-  --font-family-1: font-family: 'Baloo 2', cursive;
-  --font-family-2: font-family: 'Montserrat', sans-serif;
+  --font-family-1: 'Baloo 2', cursive;
+  --font-family-2: 'Montserrat', sans-serif;
 
   --weight-1: 600;
 }

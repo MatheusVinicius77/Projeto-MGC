@@ -9,32 +9,34 @@ import email from "../../assets/imgs/redes-sociais/email.svg";
 export default function Footer() {
   return (
     <footer className="align-center bg-grey-1 flex">
-      <img src={logo} className={styles.logo} />
-      <ul className={`align-center flex ${styles.listIcons}`}>
-        <li>
-          <a href="https://www.instagram.com/projetomgc/" target="_blank">
-            `<img src={instagram}></img>`
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/ProjetoMgc/" target="_blank">
-            `<img src={facebook}></img>`
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/company/minhasgrandescriancas/"
-            target="_blank"
-          >
-            `<img src={linkedin}></img>`
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src={email} />
-          </a>
-        </li>
-      </ul>
+      <div>
+        <img src={logo} className={styles.logo} />
+        <ul className={`align-center flex ${styles.listIcons}`}>
+          <li>
+            <a href="https://www.instagram.com/projetomgc/" target="_blank">
+              `<img src={instagram}></img>`
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ProjetoMgc/" target="_blank">
+              `<img src={facebook}></img>`
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/minhasgrandescriancas/"
+              target="_blank"
+            >
+              `<img src={linkedin}></img>`
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src={email} />
+            </a>
+          </li>
+        </ul>
+      </div>
       <ul>
         <li className="text-1 color-grey-0">Quem Somos</li>
         <li className="text-1 color-grey-0">Depoimentos</li>

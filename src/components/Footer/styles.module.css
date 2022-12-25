@@ -4,6 +4,10 @@
   width: 160px;
 }
 
+.listIcons {
+  gap: 10px;
+}
+
 .listIcons img {
   width: 48px;
 }
