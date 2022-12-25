@@ -13,7 +13,7 @@ export function TextIcon({title, textContent, iconColor}) {
   return (
     <article className={`align-center flex ${styles.wrapper}`}>
       <img className={styles.icon} src={icons[iconColor]} alt={`ícone de pasta ${iconColor}`} />
-      <article className={`flex column ${styles.textWrapper}`}>
+      <article className="flex column">
         <h2 className="title-2">{title}</h2>
         <p className="text-2">{textContent}</p>
       </article>

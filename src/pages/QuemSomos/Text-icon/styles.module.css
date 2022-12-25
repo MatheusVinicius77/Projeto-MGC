@@ -7,10 +7,6 @@
   width: 180px;
 }
 
-.textWrapper {
-  gap: 10px;
-}
-
 @media(min-width: 1100px) {
   .icon {
     display: block;

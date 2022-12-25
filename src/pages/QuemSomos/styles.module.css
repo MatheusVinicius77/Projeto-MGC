@@ -3,6 +3,7 @@
 }
 
 .wrapper {
+  gap: 85px;
   min-height: 100vh;
 }
 
@@ -14,10 +15,30 @@
 .sectionValores {
   max-width: 1028px;
   gap: 50px;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 100%;
 }
 
 .wrapper h1 {
   padding-top: 56px;
+}
+
+.wrapper h2 {
+  margin-bottom: 10px;
+}
+
+.sectionCard {
+  gap: 150px;
+}
+
+.textSobre {
+  max-width: 604px;
+  width: 100%;
+}
+
+@media (max-width: 1225px) {
+  .sectionCard {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
