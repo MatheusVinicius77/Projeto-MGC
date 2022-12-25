@@ -58,6 +58,27 @@ export function QuemSomos() {
             </p>
           </div>
         </section>
+        <section className={`container ${styles.section}`}>
+          <h2 className={`title-2 ${styles.textCenter}`}>Nossos objetivos</h2>
+          <div className={`column flex ${styles.textContent}`}>
+            <p className="text-2">
+              A educação, a arte e a cultura são os meios e emergir enquanto
+              sociedade, e assim, juntos sermos a mudança que queremos para o
+              mundo. Acreditar que cada um é a mudança que deseja para o mundo
+              torna possível o sonho de uma sociedade igualitária.
+            </p>
+            <p className="text-2">
+              Promover o desenvolvimento das habilidades dos jovens baixa-renda,
+              mostrando que existem diversas outras realidades que podem ser
+              alcançadas, além daquelas que são impostas pelo meio em que vivem.
+            </p>
+            <p className="text-2">
+              O desenvolvimento social iniciado desde a primeira infância
+              permite que os jovens possam se encontrar de acordo com as
+              habilidades que possuem e assim, seguir os próprios sonhos.
+            </p>
+          </div>
+        </section>
       </main>
     </>
   );

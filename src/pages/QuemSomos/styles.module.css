@@ -31,14 +31,18 @@
   gap: 150px;
 }
 
-.textSobre {
-  max-width: 604px;
-  width: 100%;
-}
-
 @media (max-width: 1225px) {
   .sectionCard {
     flex-direction: column;
     gap: 30px;
   }
+}
+
+.textSobre {
+  max-width: 604px;
+  width: 100%;
+}
+
+.textContent {
+  gap: 20px;
 }
