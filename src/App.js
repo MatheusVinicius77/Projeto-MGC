@@ -1,8 +1,7 @@
 import './App.css';
-import { QuemSomos } from './pages/QuemSomos';
 
 function App() {
-  return <QuemSomos />;
+  return;
 }
 
 export default App;
