@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { TextIcon } from "./Text-icon";
 import styles from "./styles.module.css";
 import teatro from "../../assets/imgs/fotos/teatro.svg";
+import Footer from "../../components/Footer";
 
 export function QuemSomos() {
   const missaoTexto =
@@ -108,6 +109,7 @@ export function QuemSomos() {
             </p>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );
