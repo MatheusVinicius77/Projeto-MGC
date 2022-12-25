@@ -10,6 +10,7 @@ import formaAmarelaApadrinhamentos from "../../assets/imgs/formas/forma-amarela-
 import formaRoxaOficinas from "../../assets/imgs/formas/forma-roxa-1.svg";
 import formaRoxaApadrinhamento from "../../assets/imgs/formas/forma-roxa-3.svg";
 import { Depoimento } from "../../components/Depoimento";
+import Footer from "../../components/Footer";
 
 export function Homepage() {
   return (
@@ -138,6 +139,7 @@ export function Homepage() {
             <Button title="Saiba mais!" />
           </div>
         </section>
+        <Footer />
       </div>
     </>
   );
