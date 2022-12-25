@@ -9,7 +9,7 @@ import email from "../../assets/imgs/redes-sociais/email-branco.svg";
 export default function Footer() {
   return (
     <footer className="bg-grey-1">
-      <div className={`align-center flex justify-between ${styles.footerInnerContainer}`}>
+      <div className={`flex column justify-evenly ${styles.footerInnerContainer}`}>
         <div>
           <img src={logo} className={styles.logo} />
           <ul className={`align-center flex ${styles.listIcons}`}>
