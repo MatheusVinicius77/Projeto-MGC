@@ -79,6 +79,35 @@ export function QuemSomos() {
             </p>
           </div>
         </section>
+        <section className={`container ${styles.section}`}>
+          <h2 className={`title-2 ${styles.textCenter}`}>Nossa História</h2>
+          <div className={`column flex ${styles.textContent}`}>
+            <p className="text-2">
+              Nossa fundadora, professora, mãe de quatro filhos, moradora do
+              Bairro Anchieta – Zona norte da capital fluminense, estava
+              inconformada com a falta de acesso que as crianças tinham para
+              lazer, educação e cultura.
+            </p>
+            <p className="text-2">
+              Com a invisibilidade do bairro para a agenda cultural municipal, o
+              MGC nasceu com o propósito de oferecer lazer e cultura para o
+              bairro Anchieta.
+            </p>
+            <p className="text-2">
+              Começamos nossas atividades em 2010, nosso espaço era o terraço da
+              casa da fundadora e à medida que o projeto foi expandido, chegamos
+              a no momento de não ter mais vaga para as oficinas.
+            </p>
+            <p className="text-2">
+              Com a intenção de ampliar a quantidade e frequência de nossas
+              oficinas, em 2015 conseguimos meios para pagar o aluguel de um
+              espaço maior. Fizemos a locação do espaço onde é hoje a atual sede
+              do Projeto. Temos também um terreno cedido pelos moradores locais
+              e temos o sonho e meta para conseguir doações e meios para
+              levantar nosso próprio espaço.
+            </p>
+          </div>
+        </section>
       </main>
     </>
   );
