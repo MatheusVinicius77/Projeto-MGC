@@ -43,7 +43,7 @@ export default function Footer({ondaRoxa}) {
             </li>
           </ul>
         </div>
-        <ul>
+        <ul className="column flex">
           <li className="text-1 color-grey-0">Quem Somos</li>
           <li className="text-1 color-grey-0">Depoimentos</li>
           <li className="text-1 color-grey-0">Projetos e Oficinas</li>

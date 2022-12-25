@@ -30,6 +30,14 @@
   width: fit-content;
 }
 
+.footerInnerContainer ul {
+  gap: 8px;
+}
+
+.footerInnerContainer h2 {
+  margin-bottom: 15px;
+}
+
 .contatoList {
   gap: 8px;
 }
