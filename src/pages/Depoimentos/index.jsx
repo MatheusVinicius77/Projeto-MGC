@@ -1,9 +1,10 @@
-
 import { Header } from "../../components/Header";
 import styles from "./styles.module.css";
 import { Depoimento } from "../../components/Depoimento";
 import setaDireita from "../../assets/imgs/icones/seta-direita.svg";
 import setaEsquerda from "../../assets/imgs/icones/seta-esquerda.svg";
+import Footer from "../../components/Footer";
+import formaRoxa  from "../../assets/imgs/formas/forma-roxa-1.svg";
 export function Depoimentopage(){
     return(
         <>
@@ -75,6 +76,7 @@ export function Depoimentopage(){
                     </li>
                 </ul>
             </nav> 
+            <Footer ondaRoxa={formaRoxa}/>
         </>
     );
 }
