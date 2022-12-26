@@ -11,4 +11,13 @@
     padding: 80px 0 20px;
   }
 
+.section {
+    margin-left: 80px;
+    max-width: 1200px;
+    width: 100%;
 
+  }
+
+  .depoimento{
+    padding-bottom: 76px;
+  }
