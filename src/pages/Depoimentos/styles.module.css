@@ -21,3 +21,33 @@
   .depoimento{
     padding-bottom: 76px;
   }
+
+
+
+.setaEsquerda{
+    margin: -40px 280px 0px 80px;
+    opacity: 55%;
+}
+
+.list{
+  padding-bottom: 122px;
+  gap: 50px;
+}
+
+.listItem{
+  margin-top: -40px;
+}
+
+li h3{
+  margin-top: -20px;
+}
+
+.setaDireita{
+  margin: -40px 0px 0px 280px;
+}
+
+.pageStatus{
+  border: 4px solid #000000;
+  border-radius: 20px;
+  padding: 1px 22px 1px 22px;
+}
