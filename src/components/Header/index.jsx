@@ -15,7 +15,7 @@ export function Header(){
   return(
     <header className={`${styles.headerDesktop} ${isActive ? styles.headerPadding : ""}`}>
       <div className={styles.logoWrapper}>
-        <img src={logo} alt="Logo Projeto Minhas grandes crianças" className={styles.logoImg}/>
+        <Link to="/home"><img src={logo} alt="Logo Projeto Minhas grandes crianças" className={styles.logoImg}/></Link>
         <button className={styles.hamburguerButton} onClick={handleToggleMenu}>
           <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/menu-rounded.png" alt="Menu Hamburguer"/>
         </button>
