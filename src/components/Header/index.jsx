@@ -3,6 +3,7 @@ import styles from "./styles.module.css"
 import logo from "../../assets/imgs/logobg.png"
 import { Button } from "../Button/index"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export function Header(){
   const [isActive, setActive] = useState(false);
@@ -22,12 +23,12 @@ export function Header(){
 
       <nav className={`${styles.menuOpen} ${!isActive ? styles.hidden: ""}`}>
         <ul className={styles.list}>
-          <li>Quem somos</li>
-          <li>Depoimentos</li>
-          <li>Projetos e Oficinas</li>
-          <li>Área do Saber</li>
-          <li>Contato</li>
-          <li>Apadrinhamento</li>
+          <li><Link className="text-1 color-grey-0 weight-1" to="/quemsomos">Quem somos</Link></li>
+          <li><Link className="text-1 color-grey-0 weight-1">Depoimentos</Link></li>
+          <li><Link className="text-1 color-grey-0 weight-1">Projetos e Oficinas</Link></li>
+          <li><Link className="text-1 color-grey-0 weight-1">Área do Saber</Link></li>
+          <li><Link className="text-1 color-grey-0 weight-1">Contato</Link></li>
+          <li><Link className="text-1 color-grey-0 weight-1">Apadrinhamento</Link></li>
           <Button title="Doação" size={true}/>
         </ul>
       </nav>
