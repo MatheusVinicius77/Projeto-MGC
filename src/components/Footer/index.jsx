@@ -17,7 +17,7 @@ export default function Footer({ondaRoxa}) {
         className={`flex column justify-evenly ${styles.footerInnerContainer}`}
       >
         <div className={`align-center column flex ${styles.logoWrapper}`}>
-          <img src={logo} className={styles.logo} />
+          <Link to="/home"><img src={logo} className={styles.logo} /></Link>
           <ul className={`align-center flex ${styles.listIcons}`}>
             <li>
               <a href="https://www.instagram.com/projetomgc/" target="_blank">
