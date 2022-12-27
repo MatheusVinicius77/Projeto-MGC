@@ -7,6 +7,7 @@ import logo from "../../assets/imgs/logobg.png";
 import email from "../../assets/imgs/redes-sociais/email-branco.svg";
 import ondaAmarela from "../../assets/imgs/formas/forma-amarela-2.svg";
 import ondaRoxa from "../../assets/imgs/formas/forma-roxa-1.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer({ondaRoxa}) {
   return (
@@ -44,12 +45,12 @@ export default function Footer({ondaRoxa}) {
           </ul>
         </div>
         <ul className="column flex">
-          <li className="text-1 color-grey-0">Quem Somos</li>
-          <li className="text-1 color-grey-0">Depoimentos</li>
-          <li className="text-1 color-grey-0">Projetos e Oficinas</li>
-          <li className="text-1 color-grey-0">Área do Saber</li>
-          <li className="text-1 color-grey-0">Contato</li>
-          <li className="text-1 color-grey-0">Apadrinhamento</li>
+          <li><Link className="text-1 color-grey-0" to="/quemsomos">Quem Somos</Link></li>
+          <li><Link className="text-1 color-grey-0" to="">Depoimentos</Link></li>
+          <li><Link className="text-1 color-grey-0" to="">Projetos e Oficinas</Link></li>
+          <li><Link className="text-1 color-grey-0" to="">Área do Saber</Link></li>
+          <li><Link className="text-1 color-grey-0" to="">Contato</Link></li>
+          <li><Link className="text-1 color-grey-0" to="">Apadrinhamento</Link></li>
         </ul>
         <article>
           <h2 className="title-3 color-grey-0">Fale conosco</h2>
