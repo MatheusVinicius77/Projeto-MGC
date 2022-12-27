@@ -5,9 +5,9 @@ import { QuemSomos } from "../pages/QuemSomos";
 export function Routes() {
   return (
     <RoutesWrapper>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/depoimentos" element={<QuemSomos />} />
-      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/home" element={<Homepage />} />
+      <Route path="/quemsomos" element={<QuemSomos />} />
+      <Route path="*" element={<Navigate to="/home" />} />
     </RoutesWrapper>
   );
 }
