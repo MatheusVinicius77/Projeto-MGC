@@ -5,14 +5,14 @@ import facebook from "../../assets/imgs/redes-sociais/facebook-branco.svg";
 import linkedin from "../../assets/imgs/redes-sociais/linkedin-branco.svg";
 import logo from "../../assets/imgs/logobg.png";
 import email from "../../assets/imgs/redes-sociais/email-branco.svg";
-import ondaAmarela from "../../assets/imgs/formas/forma-amarela-2.svg";
-import ondaRoxa from "../../assets/imgs/formas/forma-roxa-1.svg";
+import ondaAmarelaFigura from "../../assets/imgs/formas/forma-amarela-2.svg";
+import ondaRoxaFigura from "../../assets/imgs/formas/forma-roxa-1.svg";
 import { Link } from "react-router-dom";
 
 export default function Footer({ondaRoxa}) {
   return (
     <footer className="bg-grey-1">
-      <img className={styles.onda} src={ondaRoxa ? ondaRoxa : ondaAmarela} />
+      <img className={styles.onda} src={ondaRoxa ? ondaRoxaFigura : ondaAmarelaFigura} />
       <div
         className={`flex column justify-evenly ${styles.footerInnerContainer}`}
       >
