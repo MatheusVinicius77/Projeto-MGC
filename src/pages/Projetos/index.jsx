@@ -16,7 +16,7 @@ export function Projetos(){
       <main className={styles.main}>
         <div className={styles.head}>
           <h1 className={styles.title}>Projetos e Oficinas</h1>
-          <h3 className={styles.phrase}>“É hora de mudanças”</h3>
+          <h3 className={styles.phrase}>&#34;É hora de mudanças&#34;</h3>
         </div>
 
         <section className={styles.content}>
@@ -54,7 +54,7 @@ export function Projetos(){
               <h4>De 8 à 12 anos e de 13 à 18 anos</h4>
               <h2>Oficina de Circo</h2>
               <p>Oficina de circo para crianças, adolescentes e adultos em situação de risco, vulnerabilidade e reabilitação social.</p>
-              <Button title="Inscreva-se"/>
+              <Button title="Inscrever-se&#33;"/>
             </div>
           
         </section>
@@ -94,7 +94,7 @@ export function Projetos(){
               <h4>De 2 à 9 anos</h4>
               <h2>Oficina de Ballet Baby Class</h2>
               <p>O objetivo das aulas é divertir e estimular a imaginação da criança. As crianças brincam, jogam, divertem-se e aprendem ao mesmo tempo.</p>
-              <Button title="Inscreva-se"/>
+              <Button title="Inscrever-se&#33;"/>
             </div>
           
         </section>
