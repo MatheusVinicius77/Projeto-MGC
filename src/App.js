@@ -1,8 +1,7 @@
 import './App.css';
-import { AreaDoSaber } from './pages/AreaDoSaber';
 
 function App() {
-  return(<AreaDoSaber />);
+  return;
 }
 
 export default App;
