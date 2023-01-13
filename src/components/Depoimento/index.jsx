@@ -17,24 +17,25 @@ export function Depoimento({
                 corIconeJanela={corIconeJanela}
                 />
                 {/* Parte inic */}
-                <div className={`${styles.cardHeader}  ${styles.sombra}`}>
-                    <div className={styles.boxFoto}>
-                        {/* Por hora tem apenas o box, mas irei atualizar para ter imagens */}
+                <article className={`bg-grey-0 column flex ${styles.depoimento}  ${styles.sombra}`}>
+                    <div className={`flex ${styles.depoimentoInfo}`}>
+                        <figure className={styles.boxFoto}>
+                            {/* Por hora tem apenas o box, mas irei atualizar para ter imagens */}
+                        </figure>
+                        <article className={`flex column ${styles.infoAutor}`}>
+                            <h2 className="title-2">Nome de quem depõe</h2>
+                            {/* Por hora tem apenas o texto padrão no site, mas irei atualizar para ter o respectivo nome do autor */}
+                            <p className="text-3 color-grey-1">
+                                Status (ex.: voluntário; pai; criança; adolescente)
+                                {/* Inacabada. */}
+                            </p>
+                        </article>
                     </div>
-
-                    <div className={styles.infoAutor}>
-                        <h2 className={styles.nomeAutor}>Nome de quem depõe</h2>
-                        {/* Por hora tem apenas o texto padrão no site, mas irei atualizar para ter o respectivo nome do autor */}
-                        <div className={styles.statusAutor}>
-                            Status (ex.: voluntário; pai; criança; adolescente)
-                            {/* Inacabada. */}
-                        </div>
-                    </div>
-                    <div className={`${styles.textoDepoimento} ${styles.statusAutor}`}>
+                    <p className="text-3 color-grey-1">
                         Texto do depoimento
                         {/* Inacabada. */}
-                    </div>
-                </div> 
+                    </p>
+                </article> 
             </article>
         </div>
     );
