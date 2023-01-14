@@ -5,37 +5,42 @@ import setaDireita from "../../assets/imgs/icones/seta-direita.svg";
 import setaEsquerda from "../../assets/imgs/icones/seta-esquerda.svg";
 import Footer from "../../components/Footer";
 import formaRoxa  from "../../assets/imgs/formas/forma-roxa-1.svg";
+
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
+
 export function Depoimentopage(){
+    const [depoimentos, setDepoimentos] = useState([])
+    let [offset, setOffset] = useState(0)
+
+    useEffect(()=>{
+        axios.get(`https://localhost:3001/Depoimentos/`)
+            .then((response)=>{
+                setDepoimentos(response.data)
+            })
+            .catch(() => {
+                console.log("Ocorreu um erro")
+            })            
+    }, [])
+
     return(
         <>
             <Header/>
             <main className={`bg-brand-1 column flex ${styles.wrapper}`}>
             <h1 className={`title-1 ${styles.textCenter}`}>Depoimentos</h1>
                 <section className={`${styles.section} `}>
-                    {/* AINDA NÃO HÁ LÓGICA COM O BANCO DE DADOS */}
-                    <div className={styles.depoimento}>
-                        <Depoimento 
-                        corFundoHeader="bg-brand-2" 
-                        listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-3"]} 
-                        corIconeJanela="#73D676" 
-                        /> 
-                    </div>
-
-                    <div className={styles.depoimento}>
-                        <Depoimento 
-                        corFundoHeader="bg-brand-3" 
-                        listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-3"]} 
-                        corIconeJanela="#F5487E" 
-                        />
-                    </div>
-
-                    <div className={styles.depoimento}>
-                        <Depoimento 
-                        corFundoHeader="bg-brand-5" 
-                        listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-3"]} 
-                        corIconeJanela="#3FB9FF" 
-                        />
-                    </div>
+                    {depoimentos.map((depoimento)=>{
+                        return(
+                            <div className={styles.depoimento}>
+                                <Depoimento
+                                corFundoHeader="bg-brand-5" 
+                                listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-3"]} 
+                                corIconeJanela="#3FB9FF" 
+                                depoimentoObject={depoimento}
+                                />
+                            </div>
+                        )
+                    })} 
                 </section>                                  
             </main>
             {/* NAVEGAÇÃO POR HORA SEM FUNCIONAMENTO */}
