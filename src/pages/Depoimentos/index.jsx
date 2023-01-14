@@ -10,19 +10,53 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { RandomColor } from "./RandomColor.js/RandomColor";
 
+// CONSTANTE QUE DIZ A QUANTIDADE DE DEPOIMENTOS POR PÁGINA/SEÇÃO 
+const LIMIT = 3
+
 export function Depoimentopage(){
-    const [depoimentos, setDepoimentos] = useState([])
+    // constante que armazena cada grupo/seção de depoimento ()
+    const [depoimento, setDepoimento] = useState([])
+    // constante para contagem de todos os depoimentos
+    const [todosDepoimentos, settodosDepoimentos] = useState(0)
+    // variável que diz quantos botões/seções de depoimentos terá
+    let numberPages = Math.ceil(todosDepoimentos / LIMIT)
+    //offset é o responsável por pular os depoimentos e ir para outra seção
     let [offset, setOffset] = useState(0)
+    // variavél que armazena qual a página atual do usuário
+    let [CurrentPage, setCurrentPage] = useState(1);
 
     useEffect(()=>{
         axios.get(`https://localhost:3001/Depoimentos/` + offset)
             .then((response)=>{
-                setDepoimentos(response.data)
+                setDepoimento(response.data)
             })
             .catch(() => {
                 console.log("Ocorreu um erro")
-            })            
-    }, [])
+            })
+            
+        axios.get(`https://localhost:3001/Depoimentos/`)
+        .then((response)=>{
+                settodosDepoimentos(response.data.length)
+        })
+        .catch(() => {
+            console.log("Ocorreu um erro")
+        }) 
+
+
+    }, [offset])
+
+    function setPage(direction){
+        if(typeof(direction) === "string"){
+            if (direction == "back" && CurrentPage>1){
+                setOffset(offset - LIMIT)
+                setCurrentPage( CurrentPage - 1)
+            }
+            if(direction == "next" && CurrentPage<numberPages){
+                setOffset(offset + LIMIT)
+                setCurrentPage( CurrentPage + 1)
+            } 
+        }
+    }
 
     return(
         <>
@@ -30,7 +64,7 @@ export function Depoimentopage(){
             <main className={`bg-brand-1 column flex ${styles.wrapper}`}>
             <h1 className={`title-1 ${styles.textCenter}`}>Depoimentos</h1>
                 <section className={`${styles.section} `}>
-                    {depoimentos.map((depoimento,key)=>{
+                    {depoimento.map((depoimento,key)=>{
 
                         let color = RandomColor(key)
                         return(
@@ -48,12 +82,14 @@ export function Depoimentopage(){
             </main>
             {/* NAVEGAÇÃO POR HORA SEM FUNCIONAMENTO */}
             <nav className={`bg-brand-1 column ${styles.nav}`}>
-                {/* SETAS POR HORA ESTÃO SEM LÓGICA */}
                 <ul className={`flex ${styles.list}`}>
-                    {/* SEM DESTAQUE DE PÁGINA ATUAL POR HORA */}
                     <li>
-                        <button type="button" className={`bg-brand-1`}>
-                            <img src={`${setaEsquerda}`} className={styles.setaEsquerda}/>
+                        <button 
+                        type="button" 
+                        className={`bg-brand-1`}
+                        onClick={() =>{setPage("back")}}
+                        >
+                            <img src={`${setaEsquerda}`} className={CurrentPage == 1 ? `${styles.setaEsquerda} ${styles.setaOppacity}`: `${styles.setaEsquerda}`} />
                         </button>
                     </li>
                     
@@ -78,9 +114,14 @@ export function Depoimentopage(){
                     </li>
 
                     <li>
-                        <button type="button" className={`bg-brand-1`}>
-                            <img src={`${setaDireita}`} className={styles.setaDireita}/>
+                        <button 
+                        type="button" 
+                        className={`bg-brand-1`}
+                        onClick={() =>{setPage("next")}}
+                        >
+                            <img src={`${setaDireita}`} className={CurrentPage == numberPages ? `${styles.setaDireita} ${styles.setaOppacity}`: `${styles.setaDireita}`}/>
                         </button>
+                        
                     </li>
                 </ul>
             </nav> 
