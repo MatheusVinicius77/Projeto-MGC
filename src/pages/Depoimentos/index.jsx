@@ -55,6 +55,112 @@ export function Depoimentopage(){
                 setOffset(offset + LIMIT)
                 setCurrentPage( CurrentPage + 1)
             } 
+        }else{
+            setOffset((direction - 1) * 3)
+            setCurrentPage(direction)
+        }
+    }
+
+    function setButtom(page,numberPages){
+        if (CurrentPage < 5) {
+            if(page<=5){
+                return (
+                    <li>
+                        <button 
+                            className={CurrentPage == page? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` :`weight-1 title-1 bg-brand-1 ${styles.listItem} `}
+                            onClick={()=>setPage(page)}
+                            //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
+                            
+                            >   
+                                {page}
+                        </button>
+                    </li>
+                )
+            }else if(page + 1 ==numberPages){
+                return (
+                    <li>
+                        <h3 className={`weight-1 title-1`}>...</h3>
+                    </li>
+                )
+            }else if(page == numberPages){
+                return(
+                    <li>
+                    <button 
+                        className={CurrentPage == page? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` :`weight-1 title-1 bg-brand-1 ${styles.listItem} `}
+                        onClick={()=>setPage(page)}
+                        //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
+                        
+                        >   
+                            {page}
+                    </button>
+                </li>
+                ) 
+            }
+            
+            
+        }else if(CurrentPage>=5){
+            if (page == 1) {
+                return(
+                    <li>
+                        <button 
+                            className={CurrentPage == page? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` :`weight-1 title-1 bg-brand-1 ${styles.listItem} `}
+                            onClick={()=>setPage(page)}
+                            //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
+                            
+                            >   
+                                {page}
+                        </button>
+                    </li>
+                )
+            }
+            else if(page > 1 && page < CurrentPage - 1){
+                if((CurrentPage - 2 ) == page){
+                    return(
+                        <li>
+                            <h3 className={`weight-1 title-1`}>...</h3>
+                        </li>
+                    )
+                } 
+            }
+            else if(page == (CurrentPage - 1) || page == (CurrentPage) || page == (CurrentPage + 1)){
+                return(
+                    <li>
+                        <button 
+                            className={CurrentPage == page? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` :`weight-1 title-1 bg-brand-1 ${styles.listItem} `}
+                            onClick={()=>setPage(page)}
+                            //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
+                            
+                            >   
+                                {page}
+                        </button>
+                    </li>
+                )
+            }
+            else if(page > (CurrentPage + 1)){
+                if (page < numberPages) {
+                    if (page == (numberPages -1)) {
+                        return(
+                            <li>
+                                <h3 className={`weight-1 title-1`}>...</h3>
+                            </li>
+                        )
+                    }
+                }else{
+                    return(
+                        <li>
+                            <button 
+                                className={CurrentPage == page? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` :`weight-1 title-1 bg-brand-1 ${styles.listItem} `}
+                                onClick={()=>setPage(page)}
+                                //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
+                                
+                                >   
+                                    {page}
+                            </button>
+                        </li>
+                    )
+                }
+                
+            }
         }
     }
 
@@ -92,27 +198,13 @@ export function Depoimentopage(){
                             <img src={`${setaEsquerda}`} className={CurrentPage == 1 ? `${styles.setaEsquerda} ${styles.setaOppacity}`: `${styles.setaEsquerda}`} />
                         </button>
                     </li>
-                    
-                    <li>
-                        <button type="button" className={`weight-1 title-1 bg-brand-1  ${styles.listItem} ${styles.pageStatus}`}>1</button>
-                    </li>
-
-                    <li>
-                        <button type="button" className={`weight-1 title-1 bg-brand-1  ${styles.listItem}`}>2</button>
-                    </li>
-
-                    <li>
-                        <button type="button" className={`weight-1 title-1 bg-brand-1  ${styles.listItem}`}>3</button>
-                    </li>
-
-                    <li>
-                        <h3 className={`weight-1 title-1`}>...</h3>
-                    </li>
-                    
-                    <li>
-                        <button type="button" className={`weight-1 title-1 bg-brand-1  ${styles.listItem}`}>12</button>
-                    </li>
-
+                    {Array.from({length: numberPages})
+                    .map((_, index) =>  index + 1)
+                    .map((page) =>(
+                        (numberPages<=7? 
+                            setButtom(page,numberPages)
+                            :setButtom(page,numberPages)
+                    )))}
                     <li>
                         <button 
                         type="button" 
