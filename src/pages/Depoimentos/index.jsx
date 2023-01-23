@@ -26,7 +26,7 @@ export function Depoimentopage() {
     let [CurrentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
-        axios.get(`https://localhost:3001/Depoimentos/section/` + offset)
+        axios.get(`https://api-projetomgc.onrender.com/Depoimentos/section/` + offset)
             .then((response) => {
                 setDepoimento(response.data)
             })
@@ -34,7 +34,7 @@ export function Depoimentopage() {
                 console.log("Ocorreu um erro")
             })
 
-        axios.get(`https://localhost:3001/Depoimentos/`)
+        axios.get(`https://api-projetomgc.onrender.com/Depoimentos`)
             .then((response) => {
                 settodosDepoimentos(response.data.length)
             })
@@ -65,7 +65,7 @@ export function Depoimentopage() {
         if (CurrentPage < 5) {
             if (page <= 5) {
                 return (
-                    <li>
+                    <li key={page}>
                         <button
                             className={CurrentPage == page ? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` : `weight-1 title-1 bg-brand-1 ${styles.listItem} `}
                             onClick={() => setPage(page)}
@@ -78,13 +78,13 @@ export function Depoimentopage() {
                 )
             } else if (page + 1 == numberPages) {
                 return (
-                    <li>
+                    <li key={page}>
                         <h3 className={`weight-1 title-1`}>...</h3>
                     </li>
                 )
             } else if (page == numberPages) {
                 return (
-                    <li>
+                    <li key={page}>
                         <button
                             className={CurrentPage == page ? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` : `weight-1 title-1 bg-brand-1 ${styles.listItem} `}
                             onClick={() => setPage(page)}
@@ -96,12 +96,10 @@ export function Depoimentopage() {
                     </li>
                 )
             }
-
-
         } else if (CurrentPage >= 5) {
             if (page == 1) {
                 return (
-                    <li>
+                    <li key={page}>
                         <button
                             className={CurrentPage == page ? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` : `weight-1 title-1 bg-brand-1 ${styles.listItem} `}
                             onClick={() => setPage(page)}
@@ -116,7 +114,7 @@ export function Depoimentopage() {
             else if (page > 1 && page < CurrentPage - 1) {
                 if ((CurrentPage - 2) == page) {
                     return (
-                        <li>
+                        <li key={page}>
                             <h3 className={`weight-1 title-1`}>...</h3>
                         </li>
                     )
@@ -124,7 +122,7 @@ export function Depoimentopage() {
             }
             else if (page == (CurrentPage - 1) || page == (CurrentPage) || page == (CurrentPage + 1)) {
                 return (
-                    <li>
+                    <li key={page}>
                         <button
                             className={CurrentPage == page ? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` : `weight-1 title-1 bg-brand-1 ${styles.listItem} `}
                             onClick={() => setPage(page)}
@@ -140,14 +138,14 @@ export function Depoimentopage() {
                 if (page < numberPages) {
                     if (page == (numberPages - 1)) {
                         return (
-                            <li>
+                            <li key={page}>
                                 <h3 className={`weight-1 title-1`}>...</h3>
                             </li>
                         )
                     }
                 } else {
                     return (
-                        <li>
+                        <li key={page}>
                             <button
                                 className={CurrentPage == page ? `weight-1 title-1 bg-brand-1   ${styles.listItem} ${styles.pageStatus}` : `weight-1 title-1 bg-brand-1 ${styles.listItem} `}
                                 onClick={() => setPage(page)}
@@ -174,7 +172,7 @@ export function Depoimentopage() {
 
                         let color = RandomColor(key)
                         return (
-                            <div className={styles.depoimento}>
+                            <div className={styles.depoimento} key={depoimento.id}>
                                 <Depoimento
                                     corFundoHeader={color[0]}
                                     listaCoresCirculos={color[1]}
