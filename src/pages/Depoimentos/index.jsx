@@ -73,7 +73,6 @@ export function Depoimentopage() {
                   : `weight-1 title-1 bg-brand-1 ${styles.listItem} `
               }
               onClick={() => setPage(page)}
-              //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
             >
               {page}
             </button>
@@ -95,7 +94,6 @@ export function Depoimentopage() {
                   : `weight-1 title-1 bg-brand-1 ${styles.listItem} `
               }
               onClick={() => setPage(page)}
-              //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
             >
               {page}
             </button>
@@ -113,7 +111,6 @@ export function Depoimentopage() {
                   : `weight-1 title-1 bg-brand-1 ${styles.listItem} `
               }
               onClick={() => setPage(page)}
-              //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
             >
               {page}
             </button>
@@ -141,7 +138,6 @@ export function Depoimentopage() {
                   : `weight-1 title-1 bg-brand-1 ${styles.listItem} `
               }
               onClick={() => setPage(page)}
-              //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
             >
               {page}
             </button>
@@ -166,7 +162,6 @@ export function Depoimentopage() {
                     : `weight-1 title-1 bg-brand-1 ${styles.listItem} `
                 }
                 onClick={() => setPage(page)}
-                //className={`weight-1 title-1 bg-brand-1   ${styles.listItem}  `}
               >
                 {page}
               </button>
@@ -198,56 +193,57 @@ export function Depoimentopage() {
           })}
         </section>
         <nav className={`bg-brand-1 flex ${styles.nav}`}>
-            <ul className={`align-center container flex justify-between ${styles.list}`}>
+          <ul
+            className={`align-center container flex justify-between ${styles.list}`}
+          >
             <li>
-                <button
+              <button
                 type="button"
                 className={`bg-brand-1`}
                 onClick={() => {
-                    setPage("back");
+                  setPage("back");
                 }}
-                >
+              >
                 <img
-                    src={`${setaEsquerda}`}
-                    className={
+                  src={`${setaEsquerda}`}
+                  className={
                     CurrentPage == 1
-                        ? `${styles.seta} ${styles.setaOppacity}`
-                        : `${styles.seta}`
-                    }
+                      ? `${styles.seta} ${styles.setaOppacity}`
+                      : `${styles.seta}`
+                  }
                 />
-                </button>
+              </button>
             </li>
             <div className="align-center flex">
-                {Array.from({ length: numberPages })
+              {Array.from({ length: numberPages })
                 .map((_, index) => index + 1)
                 .map((page) =>
-                    numberPages <= 7
+                  numberPages <= 7
                     ? setButtom(page, numberPages)
                     : setButtom(page, numberPages)
                 )}
             </div>
             <li>
-                <button
+              <button
                 type="button"
                 className={`bg-brand-1`}
                 onClick={() => {
-                    setPage("next");
+                  setPage("next");
                 }}
-                >
+              >
                 <img
-                    src={`${setaDireita}`}
-                    className={
+                  src={`${setaDireita}`}
+                  className={
                     CurrentPage == numberPages
-                        ? `${styles.seta} ${styles.setaOppacity}`
-                        : `${styles.seta}`
-                    }
+                      ? `${styles.seta} ${styles.setaOppacity}`
+                      : `${styles.seta}`
+                  }
                 />
-                </button>
+              </button>
             </li>
-            </ul>
+          </ul>
         </nav>
       </main>
-      {/* NAVEGAÇÃO POR HORA SEM FUNCIONAMENTO */}
       <Footer ondaRoxa={formaRoxa} />
     </>
   );
