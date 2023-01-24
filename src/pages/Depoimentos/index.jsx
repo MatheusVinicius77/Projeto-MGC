@@ -199,8 +199,8 @@ export function Depoimentopage() {
         </section>
       </main>
       {/* NAVEGAÇÃO POR HORA SEM FUNCIONAMENTO */}
-      <nav className={`bg-brand-1 column ${styles.nav}`}>
-        <ul className={`flex justify-between ${styles.list}`}>
+      <nav className={`bg-brand-1 flex ${styles.nav}`}>
+        <ul className={`container flex justify-between ${styles.list}`}>
           <li>
             <button
               type="button"
