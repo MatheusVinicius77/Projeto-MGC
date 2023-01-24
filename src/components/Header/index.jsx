@@ -42,21 +42,29 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link className="text-1 color-grey-0 weight-1">Depoimentos</Link>
+            <Link className="text-1 color-grey-0 weight-1" to="/depoimentos">
+              Depoimentos
+            </Link>
           </li>
           <li>
-            <Link className="text-1 color-grey-0 weight-1">
+            <Link className="text-1 color-grey-0 weight-1" to="/projetos">
               Projetos e Oficinas
             </Link>
           </li>
           <li>
-            <Link className="text-1 color-grey-0 weight-1">Área do Saber</Link>
+            <Link className="text-1 color-grey-0 weight-1" to="/areadosaber">
+              Área do Saber
+            </Link>
           </li>
           <li>
-            <Link className="text-1 color-grey-0 weight-1">Contato</Link>
+            <Link className="text-1 color-grey-0 weight-1" to="/contato">
+              Contato
+            </Link>
           </li>
           <li>
-            <Link className="text-1 color-grey-0 weight-1">Apadrinhamento</Link>
+            <Link className="text-1 color-grey-0 weight-1" to="/apadrinhamento">
+              Apadrinhamento
+            </Link>
           </li>
           <Button title="Doação" size={true} />
         </ul>
