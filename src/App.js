@@ -1,7 +1,8 @@
 import './App.css';
+import { Depoimentopage } from './pages/Depoimentos';
 
 function App() {
-  return;
+  return <Depoimentopage />;
 }
 
 export default App;

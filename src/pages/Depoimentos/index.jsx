@@ -167,7 +167,7 @@ export function Depoimentopage() {
             <Header />
             <main className={`bg-brand-1 column flex ${styles.wrapper}`}>
                 <h1 className={`title-1 ${styles.textCenter}`}>Depoimentos</h1>
-                <section className={`${styles.section} `}>
+                <section className="container">
                     {depoimento.map((depoimento, key) => {
 
                         let color = RandomColor(key)
