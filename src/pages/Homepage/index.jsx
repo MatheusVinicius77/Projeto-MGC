@@ -11,8 +11,13 @@ import formaRoxaOficinas from "../../assets/imgs/formas/forma-roxa-1.svg";
 import formaRoxaApadrinhamento from "../../assets/imgs/formas/forma-roxa-3.svg";
 import { Depoimento } from "../../components/Depoimento";
 import Footer from "../../components/Footer";
+import { useEffect } from "react";
 
 export function Homepage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
