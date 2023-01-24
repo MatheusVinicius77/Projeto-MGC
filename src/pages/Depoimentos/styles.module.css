@@ -23,9 +23,6 @@
 .nav {
   margin-top: -40px;
 }
-.setaEsquerda {
-  margin: 0px 215px 0px 80px;
-}
 
 .setaOppacity {
   opacity: 55%;
@@ -35,17 +32,16 @@
   gap: 50px;
 }
 
+.list div {
+  gap: 27px;
+}
+
 .listItem {
   margin-top: 10px;
 }
 
 li h3 {
   padding-top: 30px;
-}
-
-.setaDireita {
-  /* padding-left: 50px; */
-  margin-left: 215px;
 }
 
 .pageStatus {
