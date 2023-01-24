@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Card } from "../../components/Cards"
 import Footer from "../../components/Footer"
@@ -9,6 +10,10 @@ import styles from "./styles.module.css"
 import { Button } from "../../components/Button";
 
 export function AreaDoSaber(){
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return(
     <>
       <Header />  

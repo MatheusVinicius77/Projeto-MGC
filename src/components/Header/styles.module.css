@@ -48,13 +48,6 @@
   gap: 24px;
 }
 
-.list li {
-  font-size: var(--font-size-5);
-  font-family: var(--font-family-1);;
-  color: #fff;
-  cursor: pointer;
-}
-
 .menu {
   display: none;
   cursor: pointer;

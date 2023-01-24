@@ -1,7 +1,13 @@
+import { BrowserRouter, ScrollRestoration } from 'react-router-dom';
 import './App.css';
+import { Routes } from './Routes';
 
 function App() {
-  return;
+  return (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 }
 
 export default App;

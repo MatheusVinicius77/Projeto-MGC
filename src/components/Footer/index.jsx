@@ -5,26 +5,40 @@ import facebook from "../../assets/imgs/redes-sociais/facebook-branco.svg";
 import linkedin from "../../assets/imgs/redes-sociais/linkedin-branco.svg";
 import logo from "../../assets/imgs/logobg.png";
 import email from "../../assets/imgs/redes-sociais/email-branco.svg";
-import ondaAmarela from "../../assets/imgs/formas/forma-amarela-2.svg";
-import ondaRoxa from "../../assets/imgs/formas/forma-roxa-1.svg";
+import ondaAmarelaFigura from "../../assets/imgs/formas/forma-amarela-2.svg";
+import ondaRoxaFigura from "../../assets/imgs/formas/forma-roxa-1.svg";
+import { Link } from "react-router-dom";
 
-export default function Footer({ondaRoxa}) {
+export default function Footer({ ondaRoxa }) {
   return (
     <footer className="bg-grey-1">
-      <img className={styles.onda} src={ondaRoxa ? ondaRoxa : ondaAmarela} />
+      <img
+        className={styles.onda}
+        src={ondaRoxa ? ondaRoxaFigura : ondaAmarelaFigura}
+      />
       <div
         className={`flex column justify-evenly ${styles.footerInnerContainer}`}
       >
         <div className={`align-center column flex ${styles.logoWrapper}`}>
-          <img src={logo} className={styles.logo} />
+          <Link to="/home">
+            <img src={logo} className={styles.logo} />
+          </Link>
           <ul className={`align-center flex ${styles.listIcons}`}>
             <li>
-              <a href="https://www.instagram.com/projetomgc/" target="_blank">
+              <a
+                href="https://www.instagram.com/projetomgc/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={instagram} />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/ProjetoMgc/" target="_blank">
+              <a
+                href="https://www.facebook.com/ProjetoMgc/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={facebook} />
               </a>
             </li>
@@ -32,6 +46,7 @@ export default function Footer({ondaRoxa}) {
               <a
                 href="https://www.linkedin.com/company/minhasgrandescriancas/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={linkedin} />
               </a>
@@ -44,12 +59,36 @@ export default function Footer({ondaRoxa}) {
           </ul>
         </div>
         <ul className="column flex">
-          <li className="text-1 color-grey-0">Quem Somos</li>
-          <li className="text-1 color-grey-0">Depoimentos</li>
-          <li className="text-1 color-grey-0">Projetos e Oficinas</li>
-          <li className="text-1 color-grey-0">Área do Saber</li>
-          <li className="text-1 color-grey-0">Contato</li>
-          <li className="text-1 color-grey-0">Apadrinhamento</li>
+          <li>
+            <Link className="text-1 color-grey-0" to="/quemsomos">
+              Quem Somos
+            </Link>
+          </li>
+          <li>
+            <Link className="text-1 color-grey-0" to="/depoimentos">
+              Depoimentos
+            </Link>
+          </li>
+          <li>
+            <Link className="text-1 color-grey-0" to="/projetos">
+              Projetos e Oficinas
+            </Link>
+          </li>
+          <li>
+            <Link className="text-1 color-grey-0" to="/areadosaber">
+              Área do Saber
+            </Link>
+          </li>
+          <li>
+            <Link className="text-1 color-grey-0" to="/contato">
+              Contato
+            </Link>
+          </li>
+          <li>
+            <Link className="text-1 color-grey-0" to="/apadrinhamento">
+              Apadrinhamento
+            </Link>
+          </li>
         </ul>
         <article>
           <h2 className="title-3 color-grey-0">Fale conosco</h2>
@@ -62,15 +101,11 @@ export default function Footer({ondaRoxa}) {
             <dd className="text-3 color-grey-0">Ref. Rua Sarjento Rego</dd>
             <dt hidden>Telefone</dt>
             <dd className="text-3 color-grey-0">
-              <a href="">
-                (21) 9 6708-1641
-              </a>
+              <a href="">(21) 9 6708-1641</a>
             </dd>
-            <dd className="text-3 color-grey-0" >
+            <dd className="text-3 color-grey-0">
               Email:
-              <a href="">
-                mgcprojeto8@gmail.com
-              </a>
+              <a href="">mgcprojeto8@gmail.com</a>
             </dd>
           </dl>
         </article>

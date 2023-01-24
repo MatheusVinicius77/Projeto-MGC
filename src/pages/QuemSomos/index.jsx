@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card } from "../../components/Cards";
 import { Header } from "../../components/Header";
 import { TextIcon } from "./Text-icon";
@@ -12,6 +13,10 @@ export function QuemSomos() {
     "A educação, a arte e a cultura são os meios de emergir enquanto cidadão, e juntos somos a mudança que queremos para a nossa sociedade; acreditando que cada um é a mudança que deseja para o mundo, tornamos possível o sonho de uma sociedade justa e igualitária. ";
   const valoresTexto =
     "Valorizar e incentivar a arte, a cultura e a educação; democratizar, por meio da cidadania cultural, o acesso aos centros culturais, esportivos, acadêmicos e profissionalizantes; desenvolver os jovens de hoje, para a sociedade de amanhã";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
