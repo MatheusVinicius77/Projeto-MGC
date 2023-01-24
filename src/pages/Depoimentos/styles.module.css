@@ -5,6 +5,7 @@
 .wrapper {
   gap: 56px;
   min-height: 100vh;
+  padding: 0 30px;
 }
 
 .wrapper h1 {
@@ -13,7 +14,6 @@
 
 .wrapper > section {
   margin: 0 auto;
-  padding: 30px;
 }
 
 .depoimento {
@@ -30,16 +30,16 @@
 
 .list {
   margin: 0 auto;
-  padding: 0 30px;
   gap: 50px;
 }
 
 .list div {
-  gap: 27px;
+  gap: 24px;
 }
 
-.listItem {
-  margin-top: 10px;
+.seta {
+  max-width: 74px;
+  width: 100%;
 }
 
 li h3 {
@@ -49,5 +49,19 @@ li h3 {
 .pageStatus {
   border: 4px solid #000000;
   border-radius: 20px;
-  padding: 1px 22px 1px 22px;
+  padding: 5px 23px;
+}
+
+@media (max-width: 485px) {
+  .list button {
+    font-size: var(--font-size-2);
+  }
+
+  .pageStatus {
+    padding: 5px 13px;
+  }
+
+  .list div {
+    gap: 10px;
+  }
 }

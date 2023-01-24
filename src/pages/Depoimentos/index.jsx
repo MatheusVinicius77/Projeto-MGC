@@ -197,57 +197,57 @@ export function Depoimentopage() {
             );
           })}
         </section>
+        <nav className={`bg-brand-1 flex ${styles.nav}`}>
+            <ul className={`align-center container flex justify-between ${styles.list}`}>
+            <li>
+                <button
+                type="button"
+                className={`bg-brand-1`}
+                onClick={() => {
+                    setPage("back");
+                }}
+                >
+                <img
+                    src={`${setaEsquerda}`}
+                    className={
+                    CurrentPage == 1
+                        ? `${styles.seta} ${styles.setaOppacity}`
+                        : `${styles.seta}`
+                    }
+                />
+                </button>
+            </li>
+            <div className="align-center flex">
+                {Array.from({ length: numberPages })
+                .map((_, index) => index + 1)
+                .map((page) =>
+                    numberPages <= 7
+                    ? setButtom(page, numberPages)
+                    : setButtom(page, numberPages)
+                )}
+            </div>
+            <li>
+                <button
+                type="button"
+                className={`bg-brand-1`}
+                onClick={() => {
+                    setPage("next");
+                }}
+                >
+                <img
+                    src={`${setaDireita}`}
+                    className={
+                    CurrentPage == numberPages
+                        ? `${styles.seta} ${styles.setaOppacity}`
+                        : `${styles.seta}`
+                    }
+                />
+                </button>
+            </li>
+            </ul>
+        </nav>
       </main>
       {/* NAVEGAÇÃO POR HORA SEM FUNCIONAMENTO */}
-      <nav className={`bg-brand-1 flex ${styles.nav}`}>
-        <ul className={`container flex justify-between ${styles.list}`}>
-          <li>
-            <button
-              type="button"
-              className={`bg-brand-1`}
-              onClick={() => {
-                setPage("back");
-              }}
-            >
-              <img
-                src={`${setaEsquerda}`}
-                className={
-                  CurrentPage == 1
-                    ? `${styles.setaEsquerda} ${styles.setaOppacity}`
-                    : `${styles.setaEsquerda}`
-                }
-              />
-            </button>
-          </li>
-          <div className="flex">
-            {Array.from({ length: numberPages })
-              .map((_, index) => index + 1)
-              .map((page) =>
-                numberPages <= 7
-                  ? setButtom(page, numberPages)
-                  : setButtom(page, numberPages)
-              )}
-          </div>
-          <li>
-            <button
-              type="button"
-              className={`bg-brand-1`}
-              onClick={() => {
-                setPage("next");
-              }}
-            >
-              <img
-                src={`${setaDireita}`}
-                className={
-                  CurrentPage == numberPages
-                    ? `${styles.setaDireita} ${styles.setaOppacity}`
-                    : `${styles.setaDireita}`
-                }
-              />
-            </button>
-          </li>
-        </ul>
-      </nav>
       <Footer ondaRoxa={formaRoxa} />
     </>
   );
