@@ -20,19 +20,19 @@ export default function Footer({ondaRoxa}) {
           <Link to="/home"><img src={logo} className={styles.logo} /></Link>
           <ul className={`align-center flex ${styles.listIcons}`}>
             <li>
-              <a href="https://www.instagram.com/projetomgc/" target="_blank">
+              <a href="https://www.instagram.com/projetomgc/" target="_blank" rel="noreferrer">
                 <img src={instagram} />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/ProjetoMgc/" target="_blank">
+              <a href="https://www.facebook.com/ProjetoMgc/" target="_blank" rel="noreferrer">
                 <img src={facebook} />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/company/minhasgrandescriancas/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <img src={linkedin} />
               </a>
@@ -46,11 +46,11 @@ export default function Footer({ondaRoxa}) {
         </div>
         <ul className="column flex">
           <li><Link className="text-1 color-grey-0" to="/quemsomos">Quem Somos</Link></li>
-          <li><Link className="text-1 color-grey-0" to="">Depoimentos</Link></li>
-          <li><Link className="text-1 color-grey-0" to="">Projetos e Oficinas</Link></li>
-          <li><Link className="text-1 color-grey-0" to="">Área do Saber</Link></li>
-          <li><Link className="text-1 color-grey-0" to="">Contato</Link></li>
-          <li><Link className="text-1 color-grey-0" to="">Apadrinhamento</Link></li>
+          <li><Link className="text-1 color-grey-0" to="/depoimentos">Depoimentos</Link></li>
+          <li><Link className="text-1 color-grey-0" to="/projetos">Projetos e Oficinas</Link></li>
+          <li><Link className="text-1 color-grey-0" to="/areadosaber">Área do Saber</Link></li>
+          <li><Link className="text-1 color-grey-0" to="/contato">Contato</Link></li>
+          <li><Link className="text-1 color-grey-0" to="/apadrinhamento">Apadrinhamento</Link></li>
         </ul>
         <article>
           <h2 className="title-3 color-grey-0">Fale conosco</h2>
