@@ -136,11 +136,11 @@ export function Homepage() {
             className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}
           >
             <h2 className="title-2 weight-1">Depoimentos</h2>
-            <Depoimento
+            {/* <Depoimento
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]}
               corIconeJanela="#73D676"
-            />
+            /> */}
             <Button title="Saiba mais!" />
           </div>
         </section>

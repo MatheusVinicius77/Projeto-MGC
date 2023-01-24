@@ -1,4 +1,4 @@
-import { Routes as RoutesWrapper, Route, Navigate, ScrollRestoration } from "react-router-dom";
+import { Routes as RoutesWrapper, Route, Navigate } from "react-router-dom";
 import { Homepage } from "../pages/Homepage";
 import { QuemSomos } from "../pages/QuemSomos";
 
