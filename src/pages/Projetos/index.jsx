@@ -76,7 +76,13 @@ export function Projetos() {
                 Oficina de circo para crianças, adolescentes e adultos em
                 situação de risco, vulnerabilidade e reabilitação social.
               </p>
-              <Button title="Inscrever-se&#33;" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
@@ -133,7 +139,13 @@ export function Projetos() {
                 criança. As crianças brincam, jogam, divertem-se e aprendem ao
                 mesmo tempo.
               </p>
-              <Button title="Inscrever-se&#33;" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
