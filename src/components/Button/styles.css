@@ -1,6 +1,4 @@
-@import "../../index.css";
-
-.true, .false{
+.botao {
   background-color: var(--color-brand-3);
   font-family: var(--font-family-2);
   font-size: var(--font-size-5);
@@ -8,6 +6,11 @@
   border-radius: 16px;
   padding: 16px;
   width: fit-content;
+  transition: 0.5s;
+}
+
+.botao:hover {
+  background-color: var(--color-brand-3-hover);
 }
 
 .true {
