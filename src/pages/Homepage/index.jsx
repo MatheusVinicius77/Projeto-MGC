@@ -90,8 +90,12 @@ export function Homepage() {
                   Espaço cultural, social e esportivo que busca desenvolver
                   crianças e jovens através da arte e da educação.
                 </p>
-                <a href="https://forms.gle/CNzp1BqFE4Axy3n56" target="_blank" rel="noreferrer">
-                <Button title="Quero ser voluntário!" />
+                <a
+                  href="https://forms.gle/CNzp1BqFE4Axy3n56"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button title="Quero ser voluntário!" />
                 </a>
               </div>
             </article>
@@ -199,8 +203,13 @@ export function Homepage() {
               ref={depoimentosRef}
             >
               {loading ? (
-                <div className={`align-center flex justify-center ${styles.loading}`}>
-                  <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="ícone de caregamento girando" />
+                <div
+                  className={`align-center flex justify-center ${styles.loading}`}
+                >
+                  <img
+                    src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif"
+                    alt="ícone de caregamento girando"
+                  />
                 </div>
               ) : (
                 todosDepoimentos.map((depoimento) => {
