@@ -30,7 +30,7 @@ export function Apadrinhamento() {
               imagem={CIEE}
               textoAlternativoImagem="Centro de Integração Empresa-Escola"
               coresSinal={["#BC54F0", "#F5487E"]}
-              corIconeJanela="#73D676"
+              corIconeJanela="#FFCF32"
             />
             <section className={`column flex ${styles.textoCard}`}>
               <div className="column flex">
