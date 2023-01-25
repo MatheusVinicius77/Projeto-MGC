@@ -191,7 +191,7 @@ export function Depoimentopage() {
             />
           </div>
         ) : (
-          <section className="container">
+          <section className={`container ${styles.depoimentosSection}`}>
             {depoimento.map((depoimento, key) => {
               let color = RandomColor(key);
               return (

@@ -62,6 +62,19 @@ li h3 {
   width: 100px;
 }
 
+.depoimentosSection > div {
+  animation: scrollLeft 1s;
+  position: relative;
+}
+
+@keyframes scrollLeft {
+  from {
+    left: -1000px;
+  } to {
+    left: 0;
+  }
+}
+
 @media (max-width: 485px) {
   .list button {
     font-size: var(--font-size-2);
