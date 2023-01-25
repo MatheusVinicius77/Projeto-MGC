@@ -30,6 +30,10 @@ p {
   line-height: 150%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   position: relative;

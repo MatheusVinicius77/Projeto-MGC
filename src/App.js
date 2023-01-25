@@ -1,5 +1,4 @@
-import { BrowserRouter, ScrollRestoration } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 import { Routes } from './Routes';
 
 function App() {
