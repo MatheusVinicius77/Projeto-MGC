@@ -1,14 +1,13 @@
-@import url("../../index.css");
-
 body {
   background-color: #FFCF32;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 56px;
+  padding: 80px 20px;
+}
+
+.main > div {
+  gap: 70px;
 }
 
 .head {
@@ -19,50 +18,23 @@ body {
   gap: 8px;
 }
 
-.title, .content-card h2 {
-  color: var(--color-grey-1);
-  font-family: var(--font-family-1);
-  font-size: var(--font-size-1);
-}
-
-.phrase, .content-card h4, .content-card p {
-  color: var(--color-grey-1);
-  font-family: var(--font-family-2);
-  font-size: var(--font-size-4);
-}
-
-.content {
-  margin-top: 60px;
-  width: 90vw;
-  max-width: 1240px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.content-card{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.content-card h4{
-  font-weight: 600;
-}
-
-.content-card h2 {
-  font-size: 40px;
-}
-
-.content-card p {
+.textoCard {
+  gap: 16px;
   max-width: 604px;
+  width: 100%;
 }
 
-.content-card Button {
+.textoCard Button {
   margin-top: 40px;
 }
 
-.row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
+@media (max-width: 1225px) {
+  .sectionConteudo {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .textoCard Button {
+    margin-top: 20px;
+  }
 }
