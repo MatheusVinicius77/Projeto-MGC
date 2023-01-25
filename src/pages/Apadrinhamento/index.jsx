@@ -43,7 +43,9 @@ export function Apadrinhamento() {
                   Para apadrinhar uma criança entre em contato conosco!
                 </p>
               </div>
-              <Button title="Whatsapp" />
+              <a href="">
+                <Button title="Whatsapp" />
+              </a>
             </section>
           </article>
         </div>

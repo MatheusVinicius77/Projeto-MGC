@@ -26,4 +26,8 @@
       flex-direction: column;
       gap: 30px;
     }
+
+    .texto {
+        gap: 30px;
+    }
 }
