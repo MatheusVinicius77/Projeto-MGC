@@ -50,13 +50,14 @@
   .headerDesktop {
     padding: 0 20px;
     flex-direction: column;
+    height: 117px;
+    transition: 0.5s;
   }
   
   .headerActive {
     height: 100vh;
-    justify-content: flex-start;
   }
-
+  
   .list {
     flex-direction: column;
     padding: 40px 0;

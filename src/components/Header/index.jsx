@@ -14,7 +14,7 @@ export function Header() {
 
   return (
     <header
-      className={`align-center flex justify-center ${styles.headerDesktop} ${
+      className={`align-center flex ${styles.headerDesktop} ${
         isActive ? styles.headerActive : ""
       }`}
     >
