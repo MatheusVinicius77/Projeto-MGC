@@ -50,6 +50,16 @@
   flex-shrink: 0;
 }
 
+.loading {
+  height: 250px;
+  width: 100%;
+}
+
+.loading img {
+  margin: 0 auto;
+  width: 60px;
+}
+
 @media (max-width: 1225px) {
   .sectionConteudo {
     flex-direction: column;

@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import bailarina from "../../assets/imgs/fotos/dancarina.svg";
 import teatro from "../../assets/imgs/fotos/teatro.svg";
 import lista from "../../assets/imgs/fotos/lista.svg";
+import loading from "../../assets/imgs/icones/loading.gif";
 import styles from "./styles.module.css";
 import { Button } from "../../components/Button";
 import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-4.svg";
@@ -21,6 +22,7 @@ export function Homepage() {
   const depoimentosRef = useRef();
   const [depoimentosSection, setDepoimentosSection] = useState(0);
   const [intervalo, setIntervalo] = useState(undefined);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,6 +35,7 @@ export function Homepage() {
       .get(`https://api-projetomgc.onrender.com/Depoimentos`)
       .then((response) => {
         settodosDepoimentos(response.data);
+        setLoading(false);
       })
       .catch(() => {});
   }, []);
@@ -194,28 +197,34 @@ export function Homepage() {
               className={`align-center flex ${styles.depoimentosWrapper}`}
               ref={depoimentosRef}
             >
-              {todosDepoimentos.map((depoimento) => {
-                const palavrasDepoimento = depoimento.texto.split(" ");
+              {loading ? (
+                <div className={`align-center flex justify-center ${styles.loading}`}>
+                  <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="ícone de caregamento girando" />
+                </div>
+              ) : (
+                todosDepoimentos.map((depoimento) => {
+                  const palavrasDepoimento = depoimento.texto.split(" ");
 
-                if (palavrasDepoimento.length > 38) {
-                  const palavrasRecortadas = palavrasDepoimento.slice(0, 37);
-                  const novoTexto = palavrasRecortadas.join(" ") + "...";
-                  depoimento = { ...depoimento, texto: novoTexto };
-                }
+                  if (palavrasDepoimento.length > 38) {
+                    const palavrasRecortadas = palavrasDepoimento.slice(0, 37);
+                    const novoTexto = palavrasRecortadas.join(" ") + "...";
+                    depoimento = { ...depoimento, texto: novoTexto };
+                  }
 
-                return (
-                  <Depoimento
-                    corFundoHeader="bg-brand-4"
-                    listaCoresCirculos={[
-                      "bg-brand-1",
-                      "bg-brand-3",
-                      "bg-brand-2",
-                    ]}
-                    corIconeJanela="#73D676"
-                    depoimentoObject={depoimento}
-                  />
-                );
-              })}
+                  return (
+                    <Depoimento
+                      corFundoHeader="bg-brand-4"
+                      listaCoresCirculos={[
+                        "bg-brand-1",
+                        "bg-brand-3",
+                        "bg-brand-2",
+                      ]}
+                      corIconeJanela="#73D676"
+                      depoimentoObject={depoimento}
+                    />
+                  );
+                })
+              )}
             </section>
             <Link to="/depoimentos">
               <Button title="Saiba mais!" />
