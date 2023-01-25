@@ -27,6 +27,10 @@ export function Depoimentopage() {
   let [CurrentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     axios
       .get(`https://api-projetomgc.onrender.com/Depoimentos/section/` + offset)
       .then((response) => {
