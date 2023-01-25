@@ -15,7 +15,7 @@ export function Header() {
   return (
     <header
       className={`align-center flex justify-center ${styles.headerDesktop} ${
-        isActive ? styles.headerPadding : ""
+        isActive ? styles.headerActive : ""
       }`}
     >
       <div className={`align-center flex justify-between ${styles.logoWrapper}`}>

@@ -51,6 +51,11 @@
     padding: 0 20px;
     flex-direction: column;
   }
+  
+  .headerActive {
+    height: 100vh;
+    justify-content: flex-start;
+  }
 
   .list {
     flex-direction: column;
