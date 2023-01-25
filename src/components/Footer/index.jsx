@@ -21,7 +21,7 @@ export default function Footer({ ondaRoxa }) {
       >
         <div className={`align-center column flex ${styles.logoWrapper}`}>
           <Link to="/home">
-            <img src={logo} className={styles.logo} />
+            <img src={logo} className={styles.logo} alt="logo" />
           </Link>
           <ul className={`align-center flex ${styles.listIcons}`}>
             <li>
@@ -30,7 +30,7 @@ export default function Footer({ ondaRoxa }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={instagram} />
+                <img src={instagram} alt="ícone do instagram" />
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ export default function Footer({ ondaRoxa }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={facebook} />
+                <img src={facebook} alt="ícone do facebook" />
               </a>
             </li>
             <li>
@@ -48,12 +48,12 @@ export default function Footer({ ondaRoxa }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={linkedin} />
+                <img src={linkedin} alt="ícone do linkedin" />
               </a>
             </li>
             <li>
               <a href="">
-                <img src={email} />
+                <img src={email} alt="ícone do email" />
               </a>
             </li>
           </ul>
@@ -101,11 +101,11 @@ export default function Footer({ ondaRoxa }) {
             <dd className="text-3 color-grey-0">Ref. Rua Sarjento Rego</dd>
             <dt hidden>Telefone</dt>
             <dd className="text-3 color-grey-0">
-              <a href="">(21) 9 6708-1641</a>
+              <a href="tel:+21967081641">(21) 9 6708-1641</a>
             </dd>
             <dd className="text-3 color-grey-0">
-              Email:
-              <a href="">mgcprojeto8@gmail.com</a>
+              Email:&nbsp;
+              <a href="mailto:mgcprojeto8@gmail.com">mgcprojeto8@gmail.com</a>
             </dd>
           </dl>
         </article>
