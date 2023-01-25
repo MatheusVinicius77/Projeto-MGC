@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export function Homepage() {
   const depoimentosRef = useRef();
@@ -33,8 +34,7 @@ export function Homepage() {
       .then((response) => {
         settodosDepoimentos(response.data);
       })
-      .catch(() => {
-      });
+      .catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -46,11 +46,11 @@ export function Homepage() {
       setDepoimentosSection(depoimentosRef.current);
 
       if (depoimentosSection) {
-        const tamanhoDepoimento =
-          depoimentosSection.offsetWidth + 40;
+        const tamanhoDepoimento = depoimentosSection.offsetWidth + 40;
         const tamanhoTotalScroll = depoimentosSection.scrollWidth;
 
-        const tamanhoScrollAumentado = depoimentosSection.scrollLeft + tamanhoDepoimento;
+        const tamanhoScrollAumentado =
+          depoimentosSection.scrollLeft + tamanhoDepoimento;
         if (tamanhoScrollAumentado < tamanhoTotalScroll) {
           depoimentosSection.scrollLeft = tamanhoScrollAumentado;
         } else {
@@ -61,7 +61,6 @@ export function Homepage() {
 
     setIntervalo(novoIntervalo);
   }, [depoimentosSection]);
-
 
   return (
     <>
@@ -116,7 +115,9 @@ export function Homepage() {
                   em 2010, atua e situa-se no Bairro do Anchieta, Zona Norte da
                   capital Rio de Janeiro.
                 </p>
-                <Button title="Conheça!" />
+                <Link to="/quemsomos">
+                  <Button title="Conheça!" />
+                </Link>
               </div>
             </article>
           </div>
@@ -144,7 +145,9 @@ export function Homepage() {
                   projeto, necessitando do pagamento de alguns educadores para
                   que possamos retomar 100% com todas as oficinas.
                 </p>
-                <Button title="Ver projetos e oficinas!" />
+                <Link to="/projetos">
+                  <Button title="Ver projetos e oficinas!" />
+                </Link>
               </div>
             </article>
           </div>
@@ -174,7 +177,9 @@ export function Homepage() {
                   abrir uma infinidade de possibilidades a quem precisa!
                   Apadrinhe uma criança e seja parte da transformação!
                 </p>
-                <Button title="Apadrinhe uma criança!" />
+                <Link to="/apadrinhamento">
+                  <Button title="Apadrinhe uma criança!" />
+                </Link>
               </div>
             </article>
           </div>
@@ -195,7 +200,7 @@ export function Homepage() {
                 if (palavrasDepoimento.length > 38) {
                   const palavrasRecortadas = palavrasDepoimento.slice(0, 37);
                   const novoTexto = palavrasRecortadas.join(" ") + "...";
-                  depoimento = {...depoimento, texto: novoTexto};
+                  depoimento = { ...depoimento, texto: novoTexto };
                 }
 
                 return (
@@ -212,7 +217,9 @@ export function Homepage() {
                 );
               })}
             </section>
-            <Button title="Saiba mais!" />
+            <Link to="/depoimentos">
+              <Button title="Saiba mais!" />
+            </Link>
           </div>
         </section>
         <Footer />
