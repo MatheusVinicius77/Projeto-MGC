@@ -34,10 +34,12 @@
 }
 
 .depoimentosWrapper {
+  border-radius: 50px;
   gap: 40px;
+  overflow-x: auto;
+  padding: 10px 0;
   scroll-behavior: smooth;
   width: 100%;
-  overflow-x: auto;
 }
 
 .depoimentosWrapper::-webkit-scrollbar {

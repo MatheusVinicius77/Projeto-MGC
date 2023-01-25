@@ -19,7 +19,7 @@ import { useRef } from "react";
 export function Homepage() {
   const depoimentosRef = useRef();
   const [depoimentosSection, setDepoimentosSection] = useState(0);
-  let intervalo = undefined;
+  const [intervalo, setIntervalo] = useState(undefined);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -42,7 +42,7 @@ export function Homepage() {
       clearInterval(intervalo);
     }
 
-    setInterval(() => {
+    const novoIntervalo = setInterval(() => {
       setDepoimentosSection(depoimentosRef.current);
 
       if (depoimentosSection) {
@@ -59,6 +59,7 @@ export function Homepage() {
       }
     }, 5000);
 
+    setIntervalo(novoIntervalo);
   }, [depoimentosSection]);
 
 
@@ -185,7 +186,7 @@ export function Homepage() {
           >
             <h2 className="title-2 weight-1">Depoimentos</h2>
             <section
-              className={`flex ${styles.depoimentosWrapper}`}
+              className={`align-center flex ${styles.depoimentosWrapper}`}
               ref={depoimentosRef}
             >
               {todosDepoimentos.map((depoimento) => {
