@@ -4,4 +4,26 @@
 
 .titleWrapper {
     gap: 15px;
+    margin-bottom: 70px;
+}
+
+.texto {
+    gap: 46px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.texto div {
+    gap: 20px;
+}
+
+.titleWrapper p, .titleWrapper h2 {
+    text-align: center;
+}
+
+@media (max-width: 1225px) {
+    .sectionConteudo {
+      flex-direction: column;
+      gap: 30px;
+    }
 }
