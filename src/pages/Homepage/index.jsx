@@ -90,7 +90,9 @@ export function Homepage() {
                   Espaço cultural, social e esportivo que busca desenvolver
                   crianças e jovens através da arte e da educação.
                 </p>
+                <a href="https://forms.gle/CNzp1BqFE4Axy3n56" target="_blank" rel="noreferrer">
                 <Button title="Quero ser voluntário!" />
+                </a>
               </div>
             </article>
           </div>
