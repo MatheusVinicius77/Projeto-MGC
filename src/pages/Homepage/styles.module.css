@@ -16,6 +16,10 @@
   padding: 80px 20px 0;
 }
 
+.sectionDepoimento {
+  width: 100%;
+}
+
 .sectionDepoimento > h2 {
   margin-bottom: 75px;
   text-transform: uppercase;
@@ -27,6 +31,33 @@
 
 .forma {
   width: 100%;
+}
+
+.depoimentosWrapper {
+  border-radius: 50px;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.depoimentosWrapper::-webkit-scrollbar {
+  height: 0;
+}
+
+.depoimentosWrapper div {
+  flex-shrink: 0;
+}
+
+.loading {
+  height: 250px;
+  width: 100%;
+}
+
+.loading img {
+  margin: 0 auto;
+  width: 60px;
 }
 
 @media (max-width: 1225px) {

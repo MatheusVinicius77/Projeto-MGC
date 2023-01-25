@@ -12,11 +12,57 @@ import formaRoxaApadrinhamento from "../../assets/imgs/formas/forma-roxa-3.svg";
 import { Depoimento } from "../../components/Depoimento";
 import Footer from "../../components/Footer";
 import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export function Homepage() {
+  const depoimentosRef = useRef();
+  const [depoimentosSection, setDepoimentosSection] = useState(0);
+  const [intervalo, setIntervalo] = useState(undefined);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [todosDepoimentos, settodosDepoimentos] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`https://api-projetomgc.onrender.com/Depoimentos`)
+      .then((response) => {
+        settodosDepoimentos(response.data);
+        setLoading(false);
+      })
+      .catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (intervalo) {
+      clearInterval(intervalo);
+    }
+
+    const novoIntervalo = setInterval(() => {
+      setDepoimentosSection(depoimentosRef.current);
+
+      if (depoimentosSection) {
+        const tamanhoDepoimento = depoimentosSection.offsetWidth + 40;
+        const tamanhoTotalScroll = depoimentosSection.scrollWidth;
+
+        const tamanhoScrollAumentado =
+          depoimentosSection.scrollLeft + tamanhoDepoimento;
+        if (tamanhoScrollAumentado < tamanhoTotalScroll) {
+          depoimentosSection.scrollLeft = tamanhoScrollAumentado;
+        } else {
+          depoimentosSection.scrollLeft = 0;
+        }
+      }
+    }, 5000);
+
+    setIntervalo(novoIntervalo);
+  }, [depoimentosSection]);
 
   return (
     <>
@@ -71,7 +117,9 @@ export function Homepage() {
                   em 2010, atua e situa-se no Bairro do Anchieta, Zona Norte da
                   capital Rio de Janeiro.
                 </p>
-                <Button title="Conheça!" />
+                <Link to="/quemsomos">
+                  <Button title="Conheça!" />
+                </Link>
               </div>
             </article>
           </div>
@@ -99,13 +147,19 @@ export function Homepage() {
                   projeto, necessitando do pagamento de alguns educadores para
                   que possamos retomar 100% com todas as oficinas.
                 </p>
-                <Button title="Ver projetos e oficinas!" />
+                <Link to="/projetos">
+                  <Button title="Ver projetos e oficinas!" />
+                </Link>
               </div>
             </article>
           </div>
         </section>
         <section className="align-center bg-brand-1 column flex justify-center">
-          <img className={styles.forma} src={formaAmarelaApadrinhamentos} alt="" />
+          <img
+            className={styles.forma}
+            src={formaAmarelaApadrinhamentos}
+            alt=""
+          />
           <div
             className={`container flex align-center justify-between ${styles.sectionConteudo}`}
           >
@@ -125,7 +179,9 @@ export function Homepage() {
                   abrir uma infinidade de possibilidades a quem precisa!
                   Apadrinhe uma criança e seja parte da transformação!
                 </p>
-                <Button title="Apadrinhe uma criança!" />
+                <Link to="/apadrinhamento">
+                  <Button title="Apadrinhe uma criança!" />
+                </Link>
               </div>
             </article>
           </div>
@@ -136,12 +192,42 @@ export function Homepage() {
             className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}
           >
             <h2 className="title-2 weight-1">Depoimentos</h2>
-            {/* <Depoimento
-              corFundoHeader="bg-brand-4"
-              listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]}
-              corIconeJanela="#73D676"
-            /> */}
-            <Button title="Saiba mais!" />
+            <section
+              className={`align-center flex ${styles.depoimentosWrapper}`}
+              ref={depoimentosRef}
+            >
+              {loading ? (
+                <div className={`align-center flex justify-center ${styles.loading}`}>
+                  <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="ícone de caregamento girando" />
+                </div>
+              ) : (
+                todosDepoimentos.map((depoimento) => {
+                  const palavrasDepoimento = depoimento.texto.split(" ");
+
+                  if (palavrasDepoimento.length > 38) {
+                    const palavrasRecortadas = palavrasDepoimento.slice(0, 37);
+                    const novoTexto = palavrasRecortadas.join(" ") + "...";
+                    depoimento = { ...depoimento, texto: novoTexto };
+                  }
+
+                  return (
+                    <Depoimento
+                      corFundoHeader="bg-brand-4"
+                      listaCoresCirculos={[
+                        "bg-brand-1",
+                        "bg-brand-3",
+                        "bg-brand-2",
+                      ]}
+                      corIconeJanela="#73D676"
+                      depoimentoObject={depoimento}
+                    />
+                  );
+                })
+              )}
+            </section>
+            <Link to="/depoimentos">
+              <Button title="Saiba mais!" />
+            </Link>
           </div>
         </section>
         <Footer />

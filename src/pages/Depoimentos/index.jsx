@@ -14,6 +14,7 @@ import { RandomColor } from "./RandomColor.js/RandomColor";
 const LIMIT = 3;
 
 export function Depoimentopage() {
+  const [loading, setLoading] = useState(true);
   // constante que armazena cada grupo/seção de depoimento ()
   const [depoimento, setDepoimento] = useState([]);
   // constante para contagem de todos os depoimentos
@@ -30,6 +31,7 @@ export function Depoimentopage() {
       .get(`https://api-projetomgc.onrender.com/Depoimentos/section/` + offset)
       .then((response) => {
         setDepoimento(response.data);
+        setLoading(false);
       })
       .catch(() => {
         console.log("Ocorreu um erro");
@@ -177,21 +179,30 @@ export function Depoimentopage() {
       <Header />
       <main className={`bg-brand-1 column flex ${styles.wrapper}`}>
         <h1 className={`title-1 ${styles.textCenter}`}>Depoimentos</h1>
-        <section className="container">
-          {depoimento.map((depoimento, key) => {
-            let color = RandomColor(key);
-            return (
-              <div className={styles.depoimento} key={depoimento.id}>
-                <Depoimento
-                  corFundoHeader={color[0]}
-                  listaCoresCirculos={color[1]}
-                  corIconeJanela={color[2]}
-                  depoimentoObject={depoimento}
-                />
-              </div>
-            );
-          })}
-        </section>
+        {loading ? (
+          <div className={`align-center flex justify-center ${styles.loading}`}>
+            <img
+              src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif"
+              alt="ícone de caregamento girando"
+            />
+          </div>
+        ) : (
+          <section className="container">
+            {depoimento.map((depoimento, key) => {
+              let color = RandomColor(key);
+              return (
+                <div className={styles.depoimento} key={depoimento.id}>
+                  <Depoimento
+                    corFundoHeader={color[0]}
+                    listaCoresCirculos={color[1]}
+                    corIconeJanela={color[2]}
+                    depoimentoObject={depoimento}
+                  />
+                </div>
+              );
+            })}
+          </section>
+        )}
         <nav className={`bg-brand-1 flex ${styles.nav}`}>
           <ul
             className={`align-center container flex justify-between ${styles.list}`}
