@@ -32,7 +32,7 @@ export function Apadrinhamento() {
               coresSinal={["#BC54F0", "#F5487E"]}
               corIconeJanela="#73D676"
             />
-            <section className={`column flex ${styles.texto}`}>
+            <section className={`column flex ${styles.textoCard}`}>
               <div className="column flex">
                 <p className="text-2">
                   Apadrinhar uma criança é um ato de amor! Acolher um futuro é
