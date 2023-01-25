@@ -15,15 +15,15 @@ export function Apadrinhamento() {
       <Header />
       <main className={`bg-brand-2 flex justify-center ${styles.main}`}>
         <div className="container column flex">
-          <section
+          <div
             className={`align-center column flex ${styles.titleWrapper}`}
           >
             <h2 className="title-1">Apadrinhe uma Criança</h2>
             <p className="text-2">
               "Juntos podemos ser a mudança que queremos para o mundo"
             </p>
-          </section>
-          <article className={`align-center flex justify-between ${styles.sectionConteudo}`}>
+          </div>
+          <section className={`align-center flex justify-between ${styles.sectionConteudo}`}>
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-5"]}
@@ -47,7 +47,7 @@ export function Apadrinhamento() {
                 <Button title="Whatsapp" />
               </a>
             </section>
-          </article>
+          </section>
         </div>
       </main>
       <Footer />

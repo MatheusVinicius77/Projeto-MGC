@@ -67,7 +67,7 @@ export function Homepage() {
   return (
     <>
       <Header />
-      <div className={`column flex justify-center ${styles.sectionWrapper}`}>
+      <main className={`column flex justify-center ${styles.sectionWrapper}`}>
         <section className="bg-brand-2 flex justify-center">
           <div
             className={`container flex align-center justify-between row-reverse ${styles.sectionConteudo}`}
@@ -242,7 +242,7 @@ export function Homepage() {
           </div>
         </section>
         <Footer />
-      </div>
+      </main>
     </>
   );
 }
