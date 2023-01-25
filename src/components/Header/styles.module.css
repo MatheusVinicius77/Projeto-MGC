@@ -90,3 +90,10 @@
     display: block;
   }
 }
+
+@media (max-width: 450px) {
+  .logoImg {
+    width: 130px;
+    object-fit: contain;
+  }
+}
