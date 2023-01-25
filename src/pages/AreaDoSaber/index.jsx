@@ -43,7 +43,13 @@ export function AreaDoSaber() {
                 O aulão acontece pelo Youtube, uma vez no mês com os seguintes
                 temas: como fazer uma redação; reforço de português; Enem.
               </p>
-              <Button title="Inscreva-se" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
@@ -68,7 +74,13 @@ export function AreaDoSaber() {
                 auxiliando-o a captar melhor os conteúdos e melhorar sua
                 performance escolar.
               </p>
-              <Button title="Inscrever-se!" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
         </div>

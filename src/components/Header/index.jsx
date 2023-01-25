@@ -18,7 +18,9 @@ export function Header() {
         isActive ? styles.headerActive : ""
       }`}
     >
-      <div className={`align-center flex justify-between ${styles.logoWrapper}`}>
+      <div
+        className={`align-center flex justify-between ${styles.logoWrapper}`}
+      >
         <Link to="/home">
           <img
             src={logo}
@@ -33,7 +35,7 @@ export function Header() {
           />
         </button>
       </div>
-      
+
       <nav className={`${styles.menuOpen} ${!isActive ? styles.hidden : ""}`}>
         <ul className={`align-center flex ${styles.list}`}>
           <li>
@@ -66,7 +68,9 @@ export function Header() {
               Apadrinhamento
             </Link>
           </li>
-          <Button title="Doação" size={true} />
+          <a href="https://pag.ae/7YEd3Eur8" target="_blank" rel="noreferrer">
+            <Button title="Doação" size={true} />
+          </a>
         </ul>
       </nav>
     </header>
