@@ -1,20 +1,13 @@
 @import url("../../index.css");
 
 .headerDesktop {
-  align-items: center;
   background-color: var(--color-grey-1);
-  display: flex;
-  justify-content: center;
-
   position: sticky;
   top: 0;
   z-index: 500;
 }
 
 .logoWrapper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   width: fit-content;
 }
 
@@ -31,19 +24,7 @@
   height: fit-content;
 }
 
-.menuNav {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.hidden {
-  display: flex;
-}
-
 .list {
-  display: flex;
-  align-items: center;
   gap: 24px;
 }
 
