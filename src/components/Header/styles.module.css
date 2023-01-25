@@ -1,21 +1,13 @@
 @import url("../../index.css");
 
 .headerDesktop {
-  align-items: center;
-  width: 100vw;
   background-color: var(--color-grey-1);
-  display: flex;
-  justify-content: center;
-
   position: sticky;
   top: 0;
   z-index: 500;
 }
 
 .logoWrapper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   width: fit-content;
 }
 
@@ -32,19 +24,7 @@
   height: fit-content;
 }
 
-.menuNav {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.hidden {
-  display: flex;
-}
-
 .list {
-  display: flex;
-  align-items: center;
   gap: 24px;
 }
 
@@ -70,8 +50,15 @@
   .headerDesktop {
     padding: 0 20px;
     flex-direction: column;
+    height: 117px;
+    justify-content: flex-start;
+    transition: 0.5s;
   }
-
+  
+  .headerActive {
+    height: 100vh;
+  }
+  
   .list {
     flex-direction: column;
     padding: 40px 0;
@@ -101,5 +88,12 @@
 
   .menu {
     display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .logoImg {
+    width: 130px;
+    object-fit: contain;
   }
 }

@@ -14,11 +14,11 @@ export function Header() {
 
   return (
     <header
-      className={`${styles.headerDesktop} ${
-        isActive ? styles.headerPadding : ""
+      className={`align-center flex justify-center ${styles.headerDesktop} ${
+        isActive ? styles.headerActive : ""
       }`}
     >
-      <div className={styles.logoWrapper}>
+      <div className={`align-center flex justify-between ${styles.logoWrapper}`}>
         <Link to="/home">
           <img
             src={logo}
@@ -33,9 +33,9 @@ export function Header() {
           />
         </button>
       </div>
-
+      
       <nav className={`${styles.menuOpen} ${!isActive ? styles.hidden : ""}`}>
-        <ul className={styles.list}>
+        <ul className={`align-center flex ${styles.list}`}>
           <li>
             <Link className="text-1 color-grey-0 weight-1" to="/quemsomos">
               Quem somos
