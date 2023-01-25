@@ -27,6 +27,10 @@ export function Depoimentopage() {
   let [CurrentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     axios
       .get(`https://api-projetomgc.onrender.com/Depoimentos/section/` + offset)
       .then((response) => {
@@ -187,7 +191,7 @@ export function Depoimentopage() {
             />
           </div>
         ) : (
-          <section className="container">
+          <section className={`container ${styles.depoimentosSection}`}>
             {depoimento.map((depoimento, key) => {
               let color = RandomColor(key);
               return (

@@ -26,6 +26,10 @@
   line-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   line-height: 150%;
 }
@@ -33,6 +37,18 @@ p {
 body {
   overflow-x: hidden;
   position: relative;
+}
+
+main > div > section, main > section > div {
+  animation: appear 1.5s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 100%;
+  }
 }
 
 .container {
