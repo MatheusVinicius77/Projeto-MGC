@@ -16,6 +16,10 @@
   padding: 80px 20px 0;
 }
 
+.sectionDepoimento {
+  width: 100%;
+}
+
 .sectionDepoimento > h2 {
   margin-bottom: 75px;
   text-transform: uppercase;
@@ -27,6 +31,16 @@
 
 .forma {
   width: 100%;
+}
+
+.depoimentosWrapper {
+  gap: 40px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.depoimentosWrapper div {
+  flex-shrink: 0;
 }
 
 @media (max-width: 1225px) {

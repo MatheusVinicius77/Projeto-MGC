@@ -12,11 +12,35 @@ import formaRoxaApadrinhamento from "../../assets/imgs/formas/forma-roxa-3.svg";
 import { Depoimento } from "../../components/Depoimento";
 import Footer from "../../components/Footer";
 import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 export function Homepage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [todosDepoimentos, settodosDepoimentos] = useState([]);
+
+  useEffect(() => {
+    console.log("aaa")
+    axios
+      .get(`https://api-projetomgc.onrender.com/Depoimentos`)
+      .then((response) => {
+        settodosDepoimentos(response.data);
+      })
+      .catch(() => {
+        console.log("Ocorreu um erro");
+      });
+  }, []);
+
+  const depoimentoDados = {
+    imagem: "fotosDepoimento/lavinia.jpeg",
+    autor: "Lavínia Borges",
+    status: "Voluntária",
+    texto:
+      "Auxiliei no desenvolvimento do site do MGC e tenho muita admiração pelo trabalho realizado por essa ONG. Arte, cultura e esportes tem importância fundamental para o crescimento das crianças e jovens, que são o futuro do nosso país!",
+  };
 
   return (
     <>
@@ -105,7 +129,11 @@ export function Homepage() {
           </div>
         </section>
         <section className="align-center bg-brand-1 column flex justify-center">
-          <img className={styles.forma} src={formaAmarelaApadrinhamentos} alt="" />
+          <img
+            className={styles.forma}
+            src={formaAmarelaApadrinhamentos}
+            alt=""
+          />
           <div
             className={`container flex align-center justify-between ${styles.sectionConteudo}`}
           >
@@ -136,11 +164,22 @@ export function Homepage() {
             className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}
           >
             <h2 className="title-2 weight-1">Depoimentos</h2>
-            {/* <Depoimento
-              corFundoHeader="bg-brand-4"
-              listaCoresCirculos={["bg-brand-1", "bg-brand-3", "bg-brand-2"]}
-              corIconeJanela="#73D676"
-            /> */}
+            <section className={`flex ${styles.depoimentosWrapper}`}>
+              {todosDepoimentos.map((depoimento) => {
+                return (
+                  <Depoimento
+                    corFundoHeader="bg-brand-4"
+                    listaCoresCirculos={[
+                      "bg-brand-1",
+                      "bg-brand-3",
+                      "bg-brand-2",
+                    ]}
+                    corIconeJanela="#73D676"
+                    depoimentoObject={depoimento}
+                  />
+                );
+              })}
+            </section>
             <Button title="Saiba mais!" />
           </div>
         </section>
