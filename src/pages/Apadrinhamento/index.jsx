@@ -43,7 +43,7 @@ export function Apadrinhamento() {
                   Para apadrinhar uma criança entre em contato conosco!
                 </p>
               </div>
-              <a href="">
+              <a href="https://web.whatsapp.com/send?phone=+5521967081641" target="_blank" rel="noreferrer">
                 <Button title="Whatsapp" />
               </a>
             </section>

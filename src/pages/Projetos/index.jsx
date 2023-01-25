@@ -25,7 +25,9 @@ export function Projetos() {
             <p className="text-2">&#34;É hora de mudanças&#34;</p>
           </div>
 
-          <section className={`align-center flex justify-between ${styles.sectionConteudo}`}>
+          <section
+            className={`align-center flex justify-between ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-5", "bg-brand-2"]}
@@ -45,11 +47,19 @@ export function Projetos() {
                 sua empregabilidade e protagonismo,de modo que se torne agente
                 transformador de sua realidade.{" "}
               </p>
-              <Button title="Inscreva-se" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
-          <section className={`align-center flex justify-between row-reverse ${styles.sectionConteudo}`}>
+          <section
+            className={`align-center flex justify-between row-reverse ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-1"
               listaCoresCirculos={["bg-brand-5", "bg-brand-4", "bg-brand-2"]}
@@ -66,11 +76,19 @@ export function Projetos() {
                 Oficina de circo para crianças, adolescentes e adultos em
                 situação de risco, vulnerabilidade e reabilitação social.
               </p>
-              <Button title="Inscrever-se&#33;" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
-          <section className={`align-center flex justify-between ${styles.sectionConteudo}`}>
+          <section
+            className={`align-center flex justify-between ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-5"
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-4"]}
@@ -91,11 +109,19 @@ export function Projetos() {
                 curiosidade, desinibição, além de proporcionar a alegria de
                 apresentar sua arte nos palcos.{" "}
               </p>
-              <Button title="Inscreva-se" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
-          <section className={`align-center flex justify-between row-reverse ${styles.sectionConteudo}`}>
+          <section
+            className={`align-center flex justify-between row-reverse ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-3"
               listaCoresCirculos={["bg-brand-5", "bg-brand-5", "bg-brand-2"]}
@@ -113,11 +139,19 @@ export function Projetos() {
                 criança. As crianças brincam, jogam, divertem-se e aprendem ao
                 mesmo tempo.
               </p>
-              <Button title="Inscrever-se&#33;" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
 
-          <section className={`align-center flex justify-between ${styles.sectionConteudo}`}>
+          <section
+            className={`align-center flex justify-between ${styles.sectionConteudo}`}
+          >
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-5"]}
@@ -135,7 +169,13 @@ export function Projetos() {
                 criança. As crianças brincam, jogam, divertem-se e aprendem ao
                 mesmo tempo.
               </p>
-              <Button title="Inscreva-se" />
+              <a
+                href="https://forms.gle/hejEGrVN7gPMCAh5A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button title="Inscreva-se" />
+              </a>
             </div>
           </section>
         </div>

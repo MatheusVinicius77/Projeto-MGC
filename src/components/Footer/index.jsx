@@ -52,7 +52,7 @@ export default function Footer({ ondaRoxa }) {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="mailto:mgcprojeto8@gmail.com">
                 <img src={email} alt="ícone do email" />
               </a>
             </li>
