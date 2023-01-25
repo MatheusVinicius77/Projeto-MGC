@@ -48,6 +48,14 @@
   gap: 24px;
 }
 
+.list a {
+  transition: 0.5s;
+}
+
+.list a:hover {
+  color: var(--color-grey-2);
+}
+
 .menu {
   display: none;
   cursor: pointer;
