@@ -37,6 +37,11 @@
   gap: 40px;
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: auto;
+}
+
+.depoimentosWrapper::-webkit-scrollbar {
+  height: 0;
 }
 
 .depoimentosWrapper div {

@@ -14,8 +14,13 @@ import Footer from "../../components/Footer";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import { useRef } from "react";
 
 export function Homepage() {
+  const depoimentosRef = useRef();
+  const [depoimentosSection, setDepoimentosSection] = useState(0);
+  let intervalo = undefined;
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -23,24 +28,39 @@ export function Homepage() {
   const [todosDepoimentos, settodosDepoimentos] = useState([]);
 
   useEffect(() => {
-    console.log("aaa")
     axios
       .get(`https://api-projetomgc.onrender.com/Depoimentos`)
       .then((response) => {
         settodosDepoimentos(response.data);
       })
       .catch(() => {
-        console.log("Ocorreu um erro");
       });
   }, []);
 
-  const depoimentoDados = {
-    imagem: "fotosDepoimento/lavinia.jpeg",
-    autor: "Lavínia Borges",
-    status: "Voluntária",
-    texto:
-      "Auxiliei no desenvolvimento do site do MGC e tenho muita admiração pelo trabalho realizado por essa ONG. Arte, cultura e esportes tem importância fundamental para o crescimento das crianças e jovens, que são o futuro do nosso país!",
-  };
+  useEffect(() => {
+    if (intervalo) {
+      clearInterval(intervalo);
+    }
+
+    setInterval(() => {
+      setDepoimentosSection(depoimentosRef.current);
+
+      if (depoimentosSection) {
+        const tamanhoDepoimento =
+          depoimentosSection.offsetWidth + 40;
+        const tamanhoTotalScroll = depoimentosSection.scrollWidth;
+
+        const tamanhoScrollAumentado = depoimentosSection.scrollLeft + tamanhoDepoimento;
+        if (tamanhoScrollAumentado < tamanhoTotalScroll) {
+          depoimentosSection.scrollLeft = tamanhoScrollAumentado;
+        } else {
+          depoimentosSection.scrollLeft = 0;
+        }
+      }
+    }, 5000);
+
+  }, [depoimentosSection]);
+
 
   return (
     <>
@@ -164,7 +184,10 @@ export function Homepage() {
             className={`container column flex align-center justify-center ${styles.sectionConteudo} ${styles.sectionDepoimento}`}
           >
             <h2 className="title-2 weight-1">Depoimentos</h2>
-            <section className={`flex ${styles.depoimentosWrapper}`}>
+            <section
+              className={`flex ${styles.depoimentosWrapper}`}
+              ref={depoimentosRef}
+            >
               {todosDepoimentos.map((depoimento) => {
                 return (
                   <Depoimento
