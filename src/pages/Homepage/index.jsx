@@ -3,7 +3,6 @@ import { Header } from "../../components/Header";
 import bailarina from "../../assets/imgs/fotos/dancarina.svg";
 import teatro from "../../assets/imgs/fotos/teatro.svg";
 import lista from "../../assets/imgs/fotos/lista.svg";
-import loading from "../../assets/imgs/icones/loading.gif";
 import styles from "./styles.module.css";
 import { Button } from "../../components/Button";
 import formaAmarelaHeader from "../../assets/imgs/formas/forma-amarela-4.svg";
