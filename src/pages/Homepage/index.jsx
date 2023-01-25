@@ -189,6 +189,14 @@ export function Homepage() {
               ref={depoimentosRef}
             >
               {todosDepoimentos.map((depoimento) => {
+                const palavrasDepoimento = depoimento.texto.split(" ");
+
+                if (palavrasDepoimento.length > 38) {
+                  const palavrasRecortadas = palavrasDepoimento.slice(0, 37);
+                  const novoTexto = palavrasRecortadas.join(" ") + "...";
+                  depoimento = {...depoimento, texto: novoTexto};
+                }
+
                 return (
                   <Depoimento
                     corFundoHeader="bg-brand-4"
