@@ -101,11 +101,11 @@ export default function Footer({ ondaRoxa }) {
             <dd className="text-3 color-grey-0">Ref. Rua Sarjento Rego</dd>
             <dt hidden>Telefone</dt>
             <dd className="text-3 color-grey-0">
-              <a href="">(21) 9 6708-1641</a>
+              <a href="tel:+21967081641">(21) 9 6708-1641</a>
             </dd>
             <dd className="text-3 color-grey-0">
-              Email:
-              <a href="">mgcprojeto8@gmail.com</a>
+              Email:&nbsp;
+              <a href="mailto:mgcprojeto8@gmail.com">mgcprojeto8@gmail.com</a>
             </dd>
           </dl>
         </article>
