@@ -1,5 +1,3 @@
-@import url("../../index.css");
-
 body {
   background-color: #FFCF32;
 }
@@ -30,14 +28,13 @@ body {
   margin-top: 40px;
 }
 
-.row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
 @media (max-width: 1225px) {
   .sectionConteudo {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .textoCard Button {
+    margin-top: 20px;
   }
 }
