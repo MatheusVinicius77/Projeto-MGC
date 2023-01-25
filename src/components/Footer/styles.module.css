@@ -38,6 +38,14 @@
   margin-bottom: 15px;
 }
 
+.footerInnerContainer a {
+  transition: 0.5s;
+}
+
+.footerInnerContainer a:hover {
+  color: var(--color-grey-2);
+}
+
 .contatoList {
   gap: 8px;
 }
