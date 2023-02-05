@@ -3,10 +3,11 @@ import { CardHeader } from "../../components/CardHeader";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { useForm } from "react-hook-form";
-import {yupResolver} from '@hookform/resolvers/yup'
+import { yupResolver } from "@hookform/resolvers/yup";
 import { contatoSchema } from "./contatoSchema";
 import Footer from "../../components/Footer";
 import styles from "./styles.module.css";
+import { InputWrapper } from "./InputWrapper";
 
 export function Contato() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export function Contato() {
     formState: { errors },
   } = useForm({
     mode: "onBlur",
-    resolver: yupResolver(contatoSchema)
+    resolver: yupResolver(contatoSchema),
   });
 
   return (
@@ -39,55 +40,48 @@ export function Contato() {
           <section className={`bg-grey-0 ${styles.sombra} ${styles.form}`}>
             <div className={styles.formGroupTop}>
               <div className={styles.inputGroup}>
-                <div className={styles.inputWrapper}>
-                  <label className="text-1 color-grey-1 weight-1">E-mail</label>
-                  <input
-                    {...register("email")}
-                    className="text-4 color-grey-1"
-                    placeholder="Insira seu email"
-                    autoComplete="off"
-                  />
-                  <span className="text-4 color-brand-4">{errors.email?.message}</span>
-                </div>
-                <div className={styles.inputWrapper}>
-                  <label className="text-1 color-grey-1 weight-1">Nome</label>
-                  <input
-                    className="text-4 color-grey-1"
-                    placeholder="Insira seu nome"
-                    autoComplete="off"
-                  />
-                </div>
+                <InputWrapper
+                  register={register}
+                  label="E-mail"
+                  name="email"
+                  errors={errors}
+                  placeholder="Insira seu email"
+                />
+                <InputWrapper
+                  register={register}
+                  label="Nome"
+                  name="nome"
+                  errors={errors}
+                  placeholder="Insira seu nome"
+                />
               </div>
               <div className={styles.inputGroup}>
-                <div className={styles.inputWrapper}>
-                  <label className="text-1 color-grey-1 weight-1">
-                    Telefone
-                  </label>
-                  <input
-                    className="text-4 color-grey-1"
-                    placeholder="Insira seu telefone"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className={styles.inputWrapper}>
-                  <label className="text-1 color-grey-1 weight-1">Data</label>
-                  <input
-                    className="text-4 color-grey-1"
-                    placeholder="Insira a data"
-                    autoComplete="off"
-                    type="date"
-                  />
-                </div>
+                <InputWrapper
+                  register={register}
+                  label="Telefone"
+                  name="telefone"
+                  errors={errors}
+                  placeholder="Insira seu telefone"
+                />
+                <InputWrapper
+                  register={register}
+                  label="Data"
+                  name="data"
+                  errors={errors}
+                  type="date"
+                  placeholder="Insira sua data"
+                />
               </div>
             </div>
-            <div className={`${styles.textareaWrapper} ${styles.inputWrapper}`}>
-              <label className="text-1 color-grey-1 weight-1">Mensagem</label>
-              <textarea
-                className="text-4 color-grey-1"
-                placeholder="Escreva aqui sua mensagem"
-                autoComplete="off"
-              />
-            </div>
+            <InputWrapper
+              className={styles.textareaWrapper}
+              register={register}
+              label="Data"
+              name="data"
+              errors={errors}
+              placeholder="Insira sua data"
+              tag="textarea"
+            />
             <Button title="Enviar" />
           </section>
         </article>
