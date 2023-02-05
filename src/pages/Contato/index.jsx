@@ -3,6 +3,7 @@ import { CardHeader } from "../../components/CardHeader";
 import { Header } from "../../components/Header";
 import Footer from "../../components/Footer";
 import styles from "./styles.module.css";
+import { Button } from "../../components/Button";
 
 export function Contato() {
   useEffect(() => {
@@ -48,10 +49,11 @@ export function Contato() {
                 </div>
               </div>
             </div>
-            <div className={styles.inputWrapper}>
+            <div className={`${styles.textareaWrapper} ${styles.inputWrapper}`}>
               <label className="text-1 color-grey-1 weight-1">Mensagem</label>
               <textarea />
             </div>
+            <Button title="Enviar" />
           </section>
         </article>
       </main>

@@ -14,12 +14,6 @@
   -webkit-box-shadow: 10px -10px 0px 0px var(--color-grey-1);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
 .formGroupTop {
   display: flex;
   flex-direction: column;
@@ -40,6 +34,11 @@
 .formWrapper textarea {
   height: 108px;
   resize: none;
+}
+
+.textareaWrapper {
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .formWrapper section {
