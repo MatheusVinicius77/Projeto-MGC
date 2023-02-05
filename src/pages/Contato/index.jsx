@@ -37,7 +37,7 @@ export function Contato() {
             listaCoresCirculos={["bg-brand-1", "bg-brand-5", "bg-brand-2"]}
             corIconeJanela="#73D676"
           />
-          <section className={`bg-grey-0 ${styles.sombra} ${styles.form}`}>
+          <form noValidate className={`bg-grey-0 ${styles.sombra} ${styles.form}`}>
             <div className={styles.formGroupTop}>
               <div className={styles.inputGroup}>
                 <InputWrapper
@@ -83,7 +83,7 @@ export function Contato() {
               tag="textarea"
             />
             <Button title="Enviar" />
-          </section>
+          </form>
         </article>
       </main>
       <Footer ondaRoxa />

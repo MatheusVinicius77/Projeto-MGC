@@ -10,6 +10,16 @@ export function InputWrapper({
   tag = "input",
   type = "text",
 }) {
+  function formatarCampoCelular(event) {
+    const campoCelular = event.target;
+
+    campoCelular.value = campoCelular.value
+      .replace(/\D/g, "")
+      .replace(/(\d{2})(\d)/, "($1) $2")
+      .replace(/(\d{5})(\d)/, "$1-$2")
+      .replace(/(-\d{4})(\d+?)$/, "$1");
+  }
+
   let FormElement;
 
   if (tag === "input") {
@@ -20,6 +30,7 @@ export function InputWrapper({
         placeholder={placeholder}
         autoComplete="off"
         type={type}
+        onInput={(event) => label === "Telefone" && formatarCampoCelular(event)}
       />
     );
   } else {
@@ -29,6 +40,7 @@ export function InputWrapper({
         className="text-4 color-grey-1"
         placeholder={placeholder}
         autoComplete="off"
+        onInput={(event) => label === "Telefone" && formatarCampoCelular(event)}
       />
     );
   }
