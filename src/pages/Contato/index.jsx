@@ -14,8 +14,9 @@ export function Contato() {
       <Header />
       <main className={`bg-brand-1 column flex justify-center ${styles.sectionWrapper}`}>
         <h1 className={`title-1 ${styles.textCenter}`}>Contato</h1>
-        <article className={`${styles.formWrapper}`}>
+        <article className={`container ${styles.formWrapper}`}>
           <CardHeader
+            className={styles.sombra}
             corFundoHeader="bg-brand-4"
             listaCoresCirculos={["bg-brand-1", "bg-brand-5", "bg-brand-2"]}
             corIconeJanela="#73D676"
@@ -28,6 +29,16 @@ export function Contato() {
               </div>
               <div className={styles.inputWrapper}>
                 <label className="text-1 color-grey-1 weight-1">Nome</label>
+                <input />
+              </div>
+            </div>
+            <div className={styles.inputGroup}>
+              <div className={styles.inputWrapper}>
+                <label className="text-1 color-grey-1 weight-1">Telefone</label>
+                <input />
+              </div>
+              <div className={styles.inputWrapper}>
+                <label className="text-1 color-grey-1 weight-1">Data</label>
                 <input />
               </div>
             </div>

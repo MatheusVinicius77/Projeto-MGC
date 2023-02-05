@@ -14,10 +14,14 @@
   -webkit-box-shadow: 10px -10px 0px 0px var(--color-grey-1);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .formWrapper {
-  max-width: 1220px;
   margin: 0 auto;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -48,6 +52,10 @@
 }
 
 @media (max-width: 635px) {
+  .form {
+    gap: 20px;
+  }
+
   .inputGroup {
     flex-direction: column;
   }
