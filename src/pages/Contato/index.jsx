@@ -76,10 +76,10 @@ export function Contato() {
             <InputWrapper
               className={styles.textareaWrapper}
               register={register}
-              label="Data"
-              name="data"
+              label="Mensagem"
+              name="mensagem"
               errors={errors}
-              placeholder="Insira sua data"
+              placeholder="Escreva aqui sua mensagem..."
               tag="textarea"
             />
             <Button title="Enviar" />

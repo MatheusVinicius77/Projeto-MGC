@@ -26,7 +26,7 @@
 }
 
 .textareaWrapper {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 635px) {
-  .formGroupTop {
+  .formGroupTop, .form, .inputGroup {
     gap: 20px;
   }
 
@@ -52,7 +52,7 @@
     flex-direction: column;
   }
 
-  .inputWrapper {
-    gap: 10px;
+  .textareaWrapper {
+    margin-top: 10px;
   }
 }
