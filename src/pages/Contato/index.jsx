@@ -29,11 +29,11 @@ export function Contato() {
               <div className={styles.inputGroup}>
                 <div className={styles.inputWrapper}>
                   <label className="text-1 color-grey-1 weight-1">E-mail</label>
-                  <input />
+                  <input className="text-4 color-grey-1" placeholder="Insira seu email" />
                 </div>
                 <div className={styles.inputWrapper}>
                   <label className="text-1 color-grey-1 weight-1">Nome</label>
-                  <input />
+                  <input className="text-4 color-grey-1" placeholder="Insira seu nome" />
                 </div>
               </div>
               <div className={styles.inputGroup}>
@@ -41,17 +41,17 @@ export function Contato() {
                   <label className="text-1 color-grey-1 weight-1">
                     Telefone
                   </label>
-                  <input />
+                  <input className="text-4 color-grey-1" placeholder="Insira seu telefone" />
                 </div>
                 <div className={styles.inputWrapper}>
                   <label className="text-1 color-grey-1 weight-1">Data</label>
-                  <input />
+                  <input className="text-4 color-grey-1" placeholder="Insira a data" type="date" />
                 </div>
               </div>
             </div>
             <div className={`${styles.textareaWrapper} ${styles.inputWrapper}`}>
               <label className="text-1 color-grey-1 weight-1">Mensagem</label>
-              <textarea />
+              <textarea className="text-4 color-grey-1" placeholder="Escreva aqui sua mensagem" />
             </div>
             <Button title="Enviar" />
           </section>
