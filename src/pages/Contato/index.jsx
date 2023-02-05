@@ -61,7 +61,7 @@ export function Contato() {
                   label="Telefone"
                   name="telefone"
                   errors={errors}
-                  placeholder="Insira seu telefone"
+                  placeholder="(XX) XXXXX-XXXX"
                 />
                 <InputWrapper
                   register={register}
