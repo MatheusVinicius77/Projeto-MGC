@@ -3,10 +3,10 @@ import { CardHeader } from "../../components/CardHeader";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { useForm } from "react-hook-form";
-import Footer from "../../components/Footer";
-import styles from "./styles.module.css";
 import {yupResolver} from '@hookform/resolvers/yup'
 import { contatoSchema } from "./contatoSchema";
+import Footer from "../../components/Footer";
+import styles from "./styles.module.css";
 
 export function Contato() {
   useEffect(() => {
