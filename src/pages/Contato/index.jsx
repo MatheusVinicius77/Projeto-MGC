@@ -12,7 +12,9 @@ export function Contato() {
   return (
     <>
       <Header />
-      <main className={`bg-brand-1 column flex justify-center ${styles.sectionWrapper}`}>
+      <main
+        className={`bg-brand-1 column flex justify-center ${styles.sectionWrapper}`}
+      >
         <h1 className={`title-1 ${styles.textCenter}`}>Contato</h1>
         <article className={`container ${styles.formWrapper}`}>
           <CardHeader
@@ -22,25 +24,33 @@ export function Contato() {
             corIconeJanela="#73D676"
           />
           <section className={`bg-grey-0 ${styles.sombra} ${styles.form}`}>
-            <div className={styles.inputGroup}>
-              <div className={styles.inputWrapper}>
-                <label className="text-1 color-grey-1 weight-1">E-mail</label>
-                <input />
+            <div className={styles.formGroupTop}>
+              <div className={styles.inputGroup}>
+                <div className={styles.inputWrapper}>
+                  <label className="text-1 color-grey-1 weight-1">E-mail</label>
+                  <input />
+                </div>
+                <div className={styles.inputWrapper}>
+                  <label className="text-1 color-grey-1 weight-1">Nome</label>
+                  <input />
+                </div>
               </div>
-              <div className={styles.inputWrapper}>
-                <label className="text-1 color-grey-1 weight-1">Nome</label>
-                <input />
+              <div className={styles.inputGroup}>
+                <div className={styles.inputWrapper}>
+                  <label className="text-1 color-grey-1 weight-1">
+                    Telefone
+                  </label>
+                  <input />
+                </div>
+                <div className={styles.inputWrapper}>
+                  <label className="text-1 color-grey-1 weight-1">Data</label>
+                  <input />
+                </div>
               </div>
             </div>
-            <div className={styles.inputGroup}>
-              <div className={styles.inputWrapper}>
-                <label className="text-1 color-grey-1 weight-1">Telefone</label>
-                <input />
-              </div>
-              <div className={styles.inputWrapper}>
-                <label className="text-1 color-grey-1 weight-1">Data</label>
-                <input />
-              </div>
+            <div className={styles.inputWrapper}>
+              <label className="text-1 color-grey-1 weight-1">Mensagem</label>
+              <textarea />
             </div>
           </section>
         </article>
