@@ -1,0 +1,63 @@
+.sectionWrapper {
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.sectionWrapper h1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sombra {
+  box-shadow: 10px -10px 0px 0px var(--color-grey-1);
+  -moz-box-shadow: 10px -10px 0px 0px var(--color-grey-1);
+  -webkit-box-shadow: 10px -10px 0px 0px var(--color-grey-1);
+}
+
+.formGroupTop {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formWrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.textareaWrapper {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.formWrapper form {
+  border: 4px solid black;
+  border-top: 0;
+  border-radius: 0 0 38px 38px;
+  padding: 65px 10%;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+@media (max-width: 635px) {
+  .formGroupTop, .form, .inputGroup {
+    gap: 20px;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+  }
+
+  .textareaWrapper {
+    margin-top: 10px;
+  }
+
+  .form button {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
