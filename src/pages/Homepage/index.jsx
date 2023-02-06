@@ -16,6 +16,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { RandomColor } from "../Depoimentos/RandomColor.js/RandomColor"
 
 export function Homepage() {
   const depoimentosRef = useRef();
@@ -36,7 +37,7 @@ export function Homepage() {
         settodosDepoimentos(response.data);
         setLoading(false);
       })
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   useEffect(() => {
@@ -220,16 +221,14 @@ export function Homepage() {
                     const novoTexto = palavrasRecortadas.join(" ") + "...";
                     depoimento = { ...depoimento, texto: novoTexto };
                   }
-
+                  //Segundo parâmetro da função RandomColor diz qual cor eu vou querer bloquear para que não apareça na página
+                  // 0: Roxo, 1: Amarelo, 2: Azul, 3:Vermelho-Vinho, 4:Verde > Por padrão é null, não bloqueia nenhuma
+                  let color = RandomColor(0, 1);
                   return (
                     <Depoimento
-                      corFundoHeader="bg-brand-4"
-                      listaCoresCirculos={[
-                        "bg-brand-1",
-                        "bg-brand-3",
-                        "bg-brand-2",
-                      ]}
-                      corIconeJanela="#73D676"
+                      corFundoHeader={color[0]}
+                      listaCoresCirculos={color[1]}
+                      corIconeJanela={color[2]}
                       depoimentoObject={depoimento}
                     />
                   );
