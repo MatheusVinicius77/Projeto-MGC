@@ -8,6 +8,7 @@ import { contatoSchema } from "./contatoSchema";
 import Footer from "../../components/Footer";
 import styles from "./styles.module.css";
 import { InputWrapper } from "./InputWrapper";
+import axios from "axios";
 
 export function Contato() {
   useEffect(() => {
@@ -23,6 +24,21 @@ export function Contato() {
     resolver: yupResolver(contatoSchema),
   });
 
+  async function enviarEmail({ email, telefone, data, mensagem }) {
+    const apiEmailUrl = "https://mgc-email-api.onrender.com/email";
+    const emailDados = {
+      data,
+      telefone,
+      to: "danisolada@gmail.com",
+      sender: email,
+      text: mensagem,
+    };
+
+    const envioEmail = await axios.post(apiEmailUrl, emailDados);
+
+    console.log(envioEmail.data);
+  }
+
   return (
     <>
       <Header />
@@ -37,7 +53,11 @@ export function Contato() {
             listaCoresCirculos={["bg-brand-1", "bg-brand-5", "bg-brand-2"]}
             corIconeJanela="#73D676"
           />
-          <form noValidate className={`bg-grey-0 ${styles.sombra} ${styles.form}`}>
+          <form
+            noValidate
+            className={`bg-grey-0 ${styles.sombra} ${styles.form}`}
+            onSubmit={handleSubmit(enviarEmail)}
+          >
             <div className={styles.formGroupTop}>
               <div className={styles.inputGroup}>
                 <InputWrapper
