@@ -14,12 +14,15 @@ import { toast } from "react-toastify";
 export function Contato() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    reset();
   }, []);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm({
     mode: "onBlur",
     resolver: yupResolver(contatoSchema),
@@ -38,7 +41,9 @@ export function Contato() {
     const envioEmail = await axios.post(apiEmailUrl, emailDados);
 
     if (envioEmail.status === 200) {
-      toast.success(envioEmail.data.message)
+      toast.success(envioEmail.data.message);
+
+      reset();
     } else {
       toast.error("Não foi possível enviar o email");
     }
