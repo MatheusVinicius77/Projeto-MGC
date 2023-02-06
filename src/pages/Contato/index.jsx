@@ -28,7 +28,7 @@ export function Contato() {
   async function enviarEmail({ email, telefone, data, mensagem }) {
     const apiEmailUrl = "https://mgc-email-api.onrender.com/email";
     const emailDados = {
-      data,
+      data: new Date(data).toLocaleDateString("pt-BR"),
       telefone,
       to: "danisolada@gmail.com",
       sender: email,
