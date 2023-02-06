@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 export function Contato() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+
     reset();
   }, []);
 
@@ -33,7 +33,7 @@ export function Contato() {
     const emailDados = {
       data: new Date(data).toLocaleDateString("pt-BR"),
       telefone,
-      to: "danisolada@gmail.com",
+      to: "mgcprojeto8@gmail.com",
       sender: email,
       text: mensagem,
     };
