@@ -9,6 +9,7 @@ import Footer from "../../components/Footer";
 import styles from "./styles.module.css";
 import { InputWrapper } from "./InputWrapper";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export function Contato() {
   useEffect(() => {
@@ -36,7 +37,11 @@ export function Contato() {
 
     const envioEmail = await axios.post(apiEmailUrl, emailDados);
 
-    console.log(envioEmail.data);
+    if (envioEmail.status === 200) {
+      toast.success(envioEmail.data.message)
+    } else {
+      toast.error("Não foi possível enviar o email");
+    }
   }
 
   return (
