@@ -10,7 +10,7 @@
     • <a href="#descricao">Descrição</a>
     • <a href="#apis">API's do projeto</a>
     • <a href="#tecnologias">Tecnologias</a>
-    • <a href="#Desenvolvedora">Desenvolvedora</a>
+    • <a href="#Desenvolvedores">Desenvolvedores</a>
 </p>
 
 <p align="center">
@@ -59,7 +59,7 @@ O projeto consiste num site desenvolvido como parte de um trabalho voluntário e
 - Axios;
 - React toastify.
 
-<h2 id="Desenvolvedora">:woman: Desenvolvedores</h2>
+<h2 id="Desenvolvedores">:woman: Desenvolvedores</h2>
 
 <p align="center">
   <a href="https://github.com/Danielle-Luz">
@@ -71,18 +71,6 @@ Danielle da Luz
 </p>
 <p align="center">
 <a href="https://www.linkedin.com/in/danielle-da-luz-nascimento/">@Linkedin</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/viniciusamc">
-    <img width="120px" src="https://media.istockphoto.com/id/1202490554/vector/person-gray-photo-placeholder-man.jpg?s=612x612&w=0&k=20&c=KyXtDhRIFdY-xFnyc_19UEK0pY3PLz2R6Bpv--VPYwo=" alt="desenho da silhueta de um homem de terno">
-  </a>
-</p>
-<p align="center">
-Vinicius Martins
-</p>
-<p align="center">
-<a href="">@Linkedin</a>
 </p>
 
 <p align="center">
@@ -98,6 +86,18 @@ Matheus Vinicius
 </p>
 
 <p align="center">
+  <a href="https://github.com/viniciusamc">
+    <img width="120px" src="https://media.istockphoto.com/id/1202490554/vector/person-gray-photo-placeholder-man.jpg?s=612x612&w=0&k=20&c=KyXtDhRIFdY-xFnyc_19UEK0pY3PLz2R6Bpv--VPYwo=" alt="desenho da silhueta de um homem de terno">
+  </a>
+</p>
+<p align="center">
+Vinicius Martins
+</p>
+<p align="center">
+<a href="https://www.linkedin.com/in/vinicius-aparecido/">@Linkedin</a>
+</p>
+
+<p align="center">
   <a href="https://github.com/KaiqueAssis">
     <img width="120px" src="https://avatars.githubusercontent.com/u/101683333?v=4" alt="foto frontal de homem pardo sorrindo levemente">
   </a>
@@ -106,5 +106,17 @@ Matheus Vinicius
 Kaique Assis
 </p>
 <p align="center">
-<a href="">@Linkedin</a>
+<a href="https://www.linkedin.com/in/kaique-assis-317a63193/">@Linkedin</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/KaiqueAssis">
+    <img width="120px" src="https://avatars.githubusercontent.com/u/107261997?v=4" alt="foto de homem de camisa vermelha com braços cruzados de lado">
+  </a>
+</p>
+<p align="center">
+Alex Inácio
+</p>
+<p align="center">
+<a href="https://www.linkedin.com/in/alex-in%C3%A1cio-3a2b1a1b5/">@Linkedin</a>
 </p>
