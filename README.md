@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="300" src="src\assets\imgs\logobg.png">
+</p>
+
 <h1 align="center">Projeto MGC (Minhas Grandes Crianças)</h1>
 
 <p align="center">
