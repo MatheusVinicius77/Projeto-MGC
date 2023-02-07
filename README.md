@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-   <img src="" alt="gif mostrando o site" /> 
+   <img src="src\assets\imgs\readme\site.gif" alt="gif mostrando o site" /> 
 </p>
 
 <h2 id="Como acessar"> :computer_mouse: Como acessar?</h2>
