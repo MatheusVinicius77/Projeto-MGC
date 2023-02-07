@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="300" src="src\assets\imgs\logobg.png">
+</p>
+
 <h1 align="center">Projeto MGC (Minhas Grandes Crianças)</h1>
 
 <p align="center">
@@ -14,7 +18,7 @@
 </p>
 
 <p align="center">
-   <img src="src\assets\imgs\readme\site.gif" alt="gif mostrando o site" /> 
+   <img src="src\assets\imgs\readme\site-pc.gif" alt="gif mostrando o site" /> 
 </p>
 
 <h2 id="Como acessar"> :computer_mouse: Como acessar?</h2>
