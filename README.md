@@ -17,6 +17,10 @@
     • <a href="#Desenvolvedores">Desenvolvedores</a>
 </p>
 
+<p align="center">
+   <img src="src\assets\imgs\readme\site-pc.gif" alt="gif mostrando o site" /> 
+</p>
+
 <h2 id="Como acessar"> :computer_mouse: Como acessar?</h2>
 
 Acesse e interaja com o projeto no site <a href="https://minhasgrandescriancas.org/">Minhas Grandes Crianças</a>.
