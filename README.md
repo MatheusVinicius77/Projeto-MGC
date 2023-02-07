@@ -19,7 +19,7 @@
 
 <h2 id="Como acessar"> :computer_mouse: Como acessar?</h2>
 
-Acesso o projeto no <a href="">no site</a>.
+Acesso e interaja com o projeto <a href="">no site</a>.
 
 
 <h2 id="descricao">:pencil2: Descrição</h2>
