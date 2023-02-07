@@ -29,10 +29,12 @@ O projeto consiste num site desenvolvido como parte de um trabalho voluntário e
 
 ### API de depoimentos
 - API desenvolvida para fornecer os dados dos depoimentos de pessoas que interagiram com o projeto, os depoimentos são exibidos no site e armazenados num banco de dados com a qual a API interage.
+- Desenvolvido por: <a href="https://github.com/MatheusVinicius77">Matheus Vinicius</a>
 - <a href="https://github.com/MatheusVinicius77/API-Projeto-MGC-">Link do repositório</a>
 
 ### API de e-mails
 - API desenvolvida para intermediar o envio de mensagens para o e-mail da ONG através do formulário na página de contato do site.
+- Desenvolvido por: <a href="https://github.com/Danielle-Luz">Danielle da Luz</a>
 - <a href="https://github.com/Danielle-Luz/api-email-mgc">Link do repositório</a>
 
 
