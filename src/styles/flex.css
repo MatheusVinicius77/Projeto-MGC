@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -20,4 +24,8 @@
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+.wrap{
+  flex-wrap: wrap;
 }

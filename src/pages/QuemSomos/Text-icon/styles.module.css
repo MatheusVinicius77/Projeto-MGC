@@ -1,0 +1,14 @@
+.wrapper {
+  gap: 32px;
+}
+
+.icon {
+  display: none;
+  width: 180px;
+}
+
+@media(min-width: 1100px) {
+  .icon {
+    display: block;
+  }
+}

@@ -1,0 +1,40 @@
+body {
+  background-color: #FFCF32;
+}
+
+.main {
+  padding: 80px 20px;
+}
+
+.main > div {
+  gap: 70px;
+}
+
+.head {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textoCard {
+  gap: 16px;
+  max-width: 604px;
+  width: 100%;
+}
+
+.textoCard Button {
+  margin-top: 40px;
+}
+
+@media (max-width: 1225px) {
+  .sectionConteudo {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .textoCard Button {
+    margin-top: 20px;
+  }
+}

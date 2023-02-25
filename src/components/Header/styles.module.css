@@ -1,0 +1,99 @@
+@import url("../../index.css");
+
+.headerDesktop {
+  background-color: var(--color-grey-1);
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+.logoWrapper {
+  width: fit-content;
+}
+
+.logoImg {
+  width: 180px;
+  height: 114px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.hamburguerButton {
+  background-color: transparent;
+  display: none;
+  height: fit-content;
+}
+
+.list {
+  gap: 24px;
+}
+
+.list a {
+  transition: 0.5s;
+}
+
+.list a:hover {
+  color: var(--color-grey-2);
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+  padding-inline: 40px;
+}
+
+.menuOpen {
+  padding-bottom: 0px;   
+}
+
+@media (max-width: 1200px) {
+  .headerDesktop {
+    padding: 0 20px;
+    flex-direction: column;
+    height: 117px;
+    justify-content: flex-start;
+    transition: 0.5s;
+  }
+  
+  .headerActive {
+    height: 100vh;
+  }
+  
+  .list {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .list li {
+    text-align: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .logoWrapper {
+    width: 100%;
+  }
+
+  .logoWrapper img {
+    padding: 0;
+  }
+
+  .hamburguerButton {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .logoImg {
+    width: 130px;
+    object-fit: contain;
+  }
+}

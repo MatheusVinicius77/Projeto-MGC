@@ -1,0 +1,77 @@
+.sectionWrapper {
+  width: 100%;
+}
+
+.sectionTexto {
+  gap: 30px;
+  max-width: 552px;
+  width: 100%;
+}
+
+.sectionTitulo {
+  gap: 20px;
+}
+
+.sectionConteudo {
+  padding: 80px 20px 0;
+}
+
+.sectionDepoimento {
+  width: 100%;
+}
+
+.sectionDepoimento > h2 {
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+
+.sectionDepoimento button {
+  margin-top: 56px;
+}
+
+.forma {
+  width: 100%;
+}
+
+.depoimentosWrapper {
+  border-radius: 50px;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.depoimentosWrapper::-webkit-scrollbar {
+  height: 0;
+}
+
+.depoimentosWrapper div {
+  flex-shrink: 0;
+}
+
+.loading {
+  height: 250px;
+  width: 100%;
+}
+
+.loading img {
+  margin: 0 auto;
+  width: 60px;
+}
+
+@media (max-width: 1225px) {
+  .sectionConteudo {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sectionDepoimento > h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .sectionDepoimento button {
+    margin-top: 10px;
+  }
+}

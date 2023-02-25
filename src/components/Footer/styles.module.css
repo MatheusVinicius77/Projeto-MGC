@@ -1,0 +1,74 @@
+.logoWrapper {
+  gap: 10px;
+}
+
+.logo {
+  object-fit: contain;
+  height: 100px;
+  width: 160px;
+}
+
+.onda {
+  width: 100%;
+}
+
+.listIcons {
+  margin: 0 auto;
+  gap: 10px;
+  width: fit-content;
+}
+
+.listIcons img {
+  width: 35px;
+}
+
+.footerInnerContainer {
+  max-width: 1163px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 40px 81px 80px;
+  width: fit-content;
+}
+
+.footerInnerContainer ul {
+  gap: 8px;
+}
+
+.footerInnerContainer h2 {
+  margin-bottom: 15px;
+}
+
+.footerInnerContainer a {
+  transition: 0.5s;
+}
+
+.footerInnerContainer a:hover {
+  color: var(--color-grey-2);
+}
+
+.contatoList {
+  gap: 8px;
+}
+
+.contatoList a {
+  word-break: break-all;
+  color: inherit;
+}
+
+@media (min-width: 920px) {
+  .logoWrapper {
+    align-items: flex-start;
+  }
+
+  .footerInnerContainer {
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .listIcons img {
+    width: 40px;
+  }
+}
