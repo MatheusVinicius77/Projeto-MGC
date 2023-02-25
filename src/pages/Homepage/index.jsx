@@ -1,6 +1,7 @@
 import { Card } from "../../components/Cards";
 import { Header } from "../../components/Header";
 import bailarina from "../../assets/imgs/fotos/dancarina.svg";
+import apadrinhe from "../../assets/imgs/fotos/apadrinhe1.jpeg";
 import teatro from "../../assets/imgs/fotos/teatro.svg";
 import lista from "../../assets/imgs/fotos/lista.svg";
 import styles from "./styles.module.css";
@@ -173,8 +174,8 @@ export function Homepage() {
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-4", "bg-brand-3"]}
-              imagem={bailarina}
-              textoAlternativoImagem="menina negra, vestindo uma roupa de bailarina dourada, com as mãos na cintura, sorrindo para a câmera"
+              imagem={apadrinhe}
+              textoAlternativoImagem="Muitas crianças em um palco de ballet sorrindo"
               coresSinal={["#FFCF32", "#73D676"]}
               corIconeJanela="#73D676"
             />

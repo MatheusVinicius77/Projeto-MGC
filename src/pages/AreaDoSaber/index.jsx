@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 
 import CIEE from "../../assets/imgs/fotos/cie.svg";
 import circo from "../../assets/imgs/fotos/oficina-circo.svg";
-
+import aula from "../../assets/imgs/fotos/aulaportugues.jpeg";
 import styles from "./styles.module.css";
 import { Button } from "../../components/Button";
 
@@ -29,9 +29,9 @@ export function AreaDoSaber() {
           <section className={`align-center flex justify-between ${styles.sectionConteudo}`}>
             <Card
               corFundoHeader="bg-brand-4"
-              listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-5"]}
-              imagem={CIEE}
-              textoAlternativoImagem="Centro de Integração Empresa-Escola"
+              listaCoresCirculos={["bg- brand-1", "bg-brand-2", "bg-brand-5"]}
+              imagem={aula}
+              textoAlternativoImagem="Criança de camisa e chapéu vermelho olhando para o lado"
               coresSinal={["#BC54F0", "#F5487E"]}
               corIconeJanela="#73D676"
             />

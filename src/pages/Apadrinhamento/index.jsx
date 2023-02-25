@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Card } from "../../components/Cards";
 import { Button } from "../../components/Button";
-import CIEE from "../../assets/imgs/fotos/cie.svg";
+import criança from "../../assets/imgs/fotos/criança.jpeg";
 import Footer from "../../components/Footer";
 import styles from "./styles.module.css";
 
@@ -27,7 +27,7 @@ export function Apadrinhamento() {
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-5"]}
-              imagem={CIEE}
+              imagem={criança}
               textoAlternativoImagem="Centro de Integração Empresa-Escola"
               coresSinal={["#BC54F0", "#F5487E"]}
               corIconeJanela="#FFCF32"

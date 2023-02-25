@@ -4,8 +4,11 @@ import { Card } from "../../components/Cards";
 import Footer from "../../components/Footer";
 
 import CIEE from "../../assets/imgs/fotos/cie.svg";
+import balletjuvenil from "../../assets/imgs/fotos/ballet3.jpeg";
+import teatro from "../../assets/imgs/fotos/oficina-de-teatro.jpeg";
 import circo from "../../assets/imgs/fotos/oficina-circo.svg";
 import ballet from "../../assets/imgs/fotos/ballet.svg";
+
 
 import styles from "./styles.module.css";
 import { Button } from "../../components/Button";
@@ -92,8 +95,8 @@ export function Projetos() {
             <Card
               corFundoHeader="bg-brand-5"
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-4"]}
-              imagem={CIEE}
-              textoAlternativoImagem="Centro de Integração Empresa-Escola"
+              imagem={teatro}
+              textoAlternativoImagem="Crianças no palco dançando ballet"
               coresSinal={["#BC54F0", "#73D676"]}
               corIconeJanela="#FFCF32"
             />
@@ -155,8 +158,8 @@ export function Projetos() {
             <Card
               corFundoHeader="bg-brand-4"
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-5"]}
-              imagem={CIEE}
-              textoAlternativoImagem="Centro de Integração Empresa-Escola"
+              imagem={balletjuvenil}
+              textoAlternativoImagem="Adolescentes em um palco com roupas amarelas brilhantes sorrindo para foto"
               coresSinal={["#BC54F0", "#F5487E"]}
               corIconeJanela="#FFCF32"
             />
