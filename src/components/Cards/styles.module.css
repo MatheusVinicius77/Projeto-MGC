@@ -53,7 +53,7 @@
     border-radius: 0 0 38px 38px;
     border-top: none;
     object-fit: cover;
-    min-height: auto;
+    max-height: 240px;
     width: 100%;
 }
 
