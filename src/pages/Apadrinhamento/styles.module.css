@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.pageCard img {
+    object-position: 50% 20%;
+}
+
 @media (max-width: 1225px) {
     .sectionConteudo {
       flex-direction: column;

@@ -7,6 +7,7 @@ import { CardHeader } from "../CardHeader";
 
 export function Card({
   corFundoHeader,
+  className,
   listaCoresCirculos,
   imagem,
   textoAlternativoImagem,
@@ -15,7 +16,7 @@ export function Card({
   corIconeJanela,
 }) {
   return (
-    <div className={styles.cardWrapper}>
+    <div className={`${styles.cardWrapper} ${className}`}>
       <article className={styles.card}>
         <CardHeader
           className={styles.sombra}
