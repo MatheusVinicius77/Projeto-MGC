@@ -29,6 +29,7 @@ export function Apadrinhamento() {
               listaCoresCirculos={["bg-brand-1", "bg-brand-2", "bg-brand-5"]}
               imagem={criança}
               textoAlternativoImagem="Centro de Integração Empresa-Escola"
+              className={styles.pageCard}
               coresSinal={["#BC54F0", "#F5487E"]}
               corIconeJanela="#FFCF32"
             />

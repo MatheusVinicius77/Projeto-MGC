@@ -68,7 +68,7 @@ export function Header() {
               Apadrinhamento
             </Link>
           </li>
-          <a href="https://pag.ae/7YEd3Eur8" target="_blank" rel="noreferrer">
+          <a href="https://pag.ae/7YMfwFhTS" target="_blank" rel="noreferrer">
             <Button title="Doação" size={true} />
           </a>
         </ul>
